@@ -1,13 +1,34 @@
 import {React} from 'react';
+import Home from './pages/home';
 import About from './pages/about';
+import Alphabets from './pages/alphabets';
+import Numbers from './pages/numbers';
+import Words from './pages/words';
+import Practice from './pages/practice';
+import Error from './pages/error';
+import Tables from './pages/table';
+import { BrowserRouter as Router,  
+        Switch,
+        Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <About/>   
-     
+      
+      <Router>        
+            <Switch>
+                <Route path={"/"} component={Home} exact />
+                <Route path={"/alphabets"} component={Alphabets } exact /> 
+                <Route path={"/numbers"} component={Numbers} exact />
+                <Route path={"/table"} component={Tables} exact />
+                <Route path={"/words"} component={Words} exact />
+                <Route path={"/practice"} component={Practice} exact /> 
+                <Route path={"/About"} component={About} exact />                
+                <Route component={Error}  />  
+            </Switch>
+        </Router>        
     </div>
   );
 }
