@@ -1,21 +1,19 @@
 import {Container,Jumbotron} from 'react-bootstrap';
 import Navbar from '../component/navbar';
-
+import errorSvg from './error404.svg';
+ 
 import './about.css';
 
 function Error() {
   return (
     <div>    
         <Navbar/>
-        <br/>        
-<Container>
-         
- <Jumbotron className="bg-light"> 
- <br/>
-     <h1>404 error page not found 😥</h1>          
- </Jumbotron>
- 
-</Container>
+          
+        <Container>
+
+        <img src={errorSvg} alt="error 404" height="700" />          
+
+        </Container>
 
     </div>
   );

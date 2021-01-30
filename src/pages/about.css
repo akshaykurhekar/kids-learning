@@ -1,5 +1,21 @@
-.About {
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
+.about {
+    margin-top: 3%;
+    /* font-family: 'Source Code Pro', monospace; */
   }
   
+  .profile_image{
+      position: relative;
+      width:30%;
+      /* margin-top: -3rem; */
+  }
+
+  .about_svg{
+      align-items: left;
+      width: 80%;
+  }
+
+  #footer{
+      background-color: rgb(157, 188, 247);
+      margin-top: 4rem;
+      text-align: center;
+  }

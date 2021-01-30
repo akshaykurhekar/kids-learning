@@ -1,0 +1,23 @@
+[
+    {
+        "alphabets":[
+            {
+                "val":"A",
+                "url":"./A.png"
+            },
+            {
+                "val":"B",
+                "url":"./A.png"
+            },
+            {
+                "val":"C",
+                "url":"./A.png"
+            },
+            {
+                "val":"D",
+                "url":"./A.png"
+            }
+        ]
+               
+    }
+]
