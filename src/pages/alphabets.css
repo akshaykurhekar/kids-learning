@@ -1,3 +1,9 @@
 .alphabets{
     text-align: center;
 }
+
+.card:hover{
+    /* zoom: 1.2; */
+    /* box-shadow: 10px 10px #888888; */
+    border:1px solid black;
+}

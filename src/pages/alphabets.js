@@ -1,8 +1,9 @@
 import {React,useState,useEffect} from 'react';
 // import Data from '../Data/data.json';
-import {Container,Jumbotron,Tabs,Tab} from 'react-bootstrap';
+import {Container,Jumbotron,Tabs,Tab,Card,Row,Col,Image} from 'react-bootstrap';
 import Navbar from '../component/navbar';
 import './alphabets.css';
+import Test from './AkshayMK1.jpg';
 
 function Numbers() {
 
@@ -10,26 +11,30 @@ function Numbers() {
             
                        {
                         "val":"A",
-                        "url":"./A.png"
+                        "url":"Apple",
+                        "src":Test
                     },
                     {
                         "val":"B",
-                        "url":"./A.png"
+                        "url":"boll",
+                        "src":Test
                     },
                     {
                         "val":"C",
-                        "url":"./A.png"
+                        "url":"./A.png",
+                        "src":Test
                     },
                     {
                         "val":"D",
-                        "url":"./A.png"
+                        "url":"./A.png",
+                        "src":Test
                     }
         ]
-        const [dataList,setList] = useState([Data]);
+        // const [dataList,setList] = useState([Data]);
 
-        useEffect(()=>{
-                    setList(Data);           
-        },[]);
+        // useEffect(()=>{
+        //             setList(Data);           
+        // },[]);
 
     console.log(Data);
 
@@ -38,32 +43,34 @@ function Numbers() {
         <Navbar/>
         <br/>        
 <Container>
-   
- <Tabs defaultActiveKey="Home" id="uncontrolled-tab-example">
-  <Tab eventKey="home" title="Home">
-    <Jumbotron className="bg-light"> 
-    <br/>
-    <h1>404 error page not found 😥</h1>
-    {
-        dataList.map(item => {
-            return <h1 key>{item.val}</h1>
-        })
-    }               
-    </Jumbotron>
-  </Tab>
-  <Tab eventKey="profile" title="Profile">
-  <Jumbotron className="bg-light"> 
-    <br/>
-    <h1>404 error page not found T! 😥</h1>               
-    </Jumbotron>
-  </Tab>
-  <Tab eventKey="contact" title="Contact" >
-  <Jumbotron className="bg-light"> 
-    <br/>
-    <h1>404 error T2 😥</h1>               
-    </Jumbotron>
-  </Tab>
-</Tabs>
+    <Row>
+        
+        {
+        Data.map((variant, idx) => (
+            <Col md="4" key={idx} >
+            <Card
+            className="mb-2 card"
+            //   bg={variant.toLowerCase()}
+              
+            //   text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
+              style={{ width: '18rem' }}
+              
+            >
+             
+              <Card.Body>
+                <Card.Title>{variant.val} {variant.url} </Card.Title>
+                <Card.Text>
+                  <Image src={variant.src} alt="test.." width="100" />
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            </Col>
+          ))
+    }    
+        
+    </Row>
+
+ 
 </Container>
 
     </div>
