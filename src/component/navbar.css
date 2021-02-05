@@ -3,3 +3,7 @@
 h1{
     font-family:'Hachi Maru Pop', cursive;
 }
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }

@@ -1,9 +1,15 @@
 .alphabets{
     text-align: center;
 }
-
-.card:hover{
-    /* zoom: 1.2; */
-    /* box-shadow: 10px 10px #888888; */
+.card-style{
+    /* border-radius:2%; */
+    }
+.card-style:hover{
     border:1px solid black;
+    }
+
+@media (min-width: 576px) { 
+    .media-col{
+        width: 2rem;
+    }
 }

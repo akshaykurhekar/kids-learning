@@ -1,6 +1,8 @@
 import {Row,Col,Image,Container,Jumbotron} from 'react-bootstrap';
 import Practicals from '../component/tspractical';
+
 import Navbar from '../component/navbar';
+import Footer from '../component/footer';
 import akshay from './AkshayMK1.jpg';
 import AboutUs from './AboutUs.svg';
 import './about.css';
@@ -24,12 +26,9 @@ function About() {
        
            </Col>
        </Row>
-      
+    <Footer/>
      
-      <div id="footer">
-      <h3>Created with ❤️ by Akshay Kurhekar</h3>
-      </div>
- 
+       
 
 
     </div>

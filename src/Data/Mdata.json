@@ -1,0 +1,51 @@
+ [
+    {
+        "val":"अ",
+        "url":"Apple"         
+    },
+    {
+        "val":"आ ",
+        "url":"boll"
+    },
+    {
+        "val":"इ ",
+        "url":"./A.png"
+    },
+    {
+        "val":"ई ",
+        "url":"./A.png"
+    },
+    {
+        "val":"उ",
+        "url":"Apple"
+    },
+    {
+        "val":" ऊ ",
+        "url":"boll"
+    },
+    {
+        "val":"ए ",
+        "url":"./A.png"
+    },
+    {
+        "val":"ऐ ",
+        "url":"./A.png"
+    },
+    {
+        "val":"ओ ",
+        "url":"Apple"
+    },
+    {
+        "val":"औ ",
+        "url":"boll"        
+    },
+    {
+        "val":"अं ",
+        "url":"./A.png"
+         
+    },
+    {
+        "val":"अः",
+        "url":"./A.png"         
+    }
+]

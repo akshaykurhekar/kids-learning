@@ -1,24 +1,42 @@
-import {Container,Jumbotron} from 'react-bootstrap';
-import Navbar from '../component/navbar';
+import React from "react";
+import { ReactSketchCanvas } from "react-sketch-canvas";
 
-import './about.css';
+const styles = {
+  border: "0.0625rem solid #9c9c9c",
+  borderRadius: "0.25rem"
+};
 
-function Practice() {
-  return (
-    <div>    
-        <Navbar/>
-        <br/>        
-<Container>
-         
- <Jumbotron className="bg-light"> 
- <br/>
-     <h1>Practice</h1>          
- </Jumbotron>
- 
-</Container>
+const Canvas = class extends React.Component {
+  constructor(props) {
+    super(props);
 
-    </div>
-  );
-}
+    this.canvas = React.createRef();
+  }
 
-export default Practice;
+  render() {
+    return (
+      <div>
+        <ReactSketchCanvas
+          ref={this.canvas}
+          strokeWidth={5}
+          strokeColor="black"
+        />
+        <button
+          onClick={() => {
+            this.canvas.current.exportImage("png")
+              .then(data => {
+                console.log(data);
+              })
+              .catch(e => {
+                console.log(e);
+              });
+          }}
+        >
+          Get Image
+        </button>
+      </div>
+    );
+  }
+};
+
+export default Canvas;
