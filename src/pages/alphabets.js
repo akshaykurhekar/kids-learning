@@ -22,7 +22,7 @@ function Numbers() {
             <Col md="1" key={idx} className="media-col" >
             <Card className="mb-3 card-style">
              
-              <Card.Body>
+              <Card.Body style={{padding:'1rem'}}>
                 <Card.Title>{variant.val}</Card.Title>
                 {/* <Card.Text>
                   <Image src={variant.src} alt="test.." width="100" />
@@ -43,7 +43,7 @@ function Numbers() {
         Data1.map((variant, idx) => (
             <Col md="1" key={idx} className="media-col" >
             <Card className="mb-3 card-style">             
-              <Card.Body>
+              <Card.Body style={{padding:'1rem'}}>
                 <Card.Title>{variant.val}</Card.Title>
                 {/* <Card.Text>
                   <Image src={variant.src} alt="test.." width="100" />
@@ -64,7 +64,7 @@ function Numbers() {
         MData.map((variant, idx) => (
             <Col md="1" key={idx} className="media-col" >
             <Card className="mb-3 card-style">             
-              <Card.Body>
+              <Card.Body style={{padding:'1rem'}}>
                 <Card.Title>{variant.val}</Card.Title>
                 {/* <Card.Text>
                   <Image src={variant.src} alt="test.." width="100" />

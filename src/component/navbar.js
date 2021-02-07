@@ -4,7 +4,7 @@ import './navbar.css';
 function Navbarkids() {
   return (
     <div className="Navbar">
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg">
     <Navbar.Brand href="/"><h1>KG E-Book</h1> </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
