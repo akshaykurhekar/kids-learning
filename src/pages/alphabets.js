@@ -4,6 +4,7 @@ import Data1 from '../Data/Mdata.json';
 import MData from '../Data/M1data.json';
 import {Container,Jumbotron,Card,Row,Col,Image} from 'react-bootstrap';
 import Navbar from '../component/navbar';
+import Footer from '../component/footer';
 import './alphabets.css';
 import Test from './AkshayMK1.jpg';
 
@@ -79,7 +80,7 @@ function Numbers() {
     </Card>  
  
 </Container>
-
+    <Footer/>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactSketchCanvas } from "react-sketch-canvas";
+import Footer from '../component/footer';
 
 const styles = {
   border: "0.0625rem solid #9c9c9c",
@@ -34,6 +35,7 @@ const Canvas = class extends React.Component {
         >
           Get Image
         </button>
+        <Footer/>
       </div>
     );
   }

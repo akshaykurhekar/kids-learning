@@ -1,6 +1,6 @@
 import {Container,Jumbotron} from 'react-bootstrap';
 import Navbar from '../component/navbar';
-
+import Footer from '../component/footer';
 import './about.css';
 
 function Words() {
@@ -16,7 +16,7 @@ function Words() {
  </Jumbotron>
  
 </Container>
-
+<Footer/>
     </div>
   );
 }

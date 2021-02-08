@@ -6,7 +6,7 @@ function Tsparticles() {
         <Particles
         className="style"
         id="tsparticles"
-        height="10vh" width="100vw"  
+        height="100vh" width="98.9vw"  
         options={
             {
                 "autoPlay": true,
