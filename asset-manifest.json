@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/KG-E-Book/static/css/main.53860222.chunk.css",
+    "main.js": "/KG-E-Book/static/js/main.1b18c431.chunk.js",
+    "main.js.map": "/KG-E-Book/static/js/main.1b18c431.chunk.js.map",
+    "runtime-main.js": "/KG-E-Book/static/js/runtime-main.83556268.js",
+    "runtime-main.js.map": "/KG-E-Book/static/js/runtime-main.83556268.js.map",
+    "static/css/2.850f75a3.chunk.css": "/KG-E-Book/static/css/2.850f75a3.chunk.css",
+    "static/js/2.7541fd62.chunk.js": "/KG-E-Book/static/js/2.7541fd62.chunk.js",
+    "static/js/2.7541fd62.chunk.js.map": "/KG-E-Book/static/js/2.7541fd62.chunk.js.map",
+    "static/js/3.c023ec97.chunk.js": "/KG-E-Book/static/js/3.c023ec97.chunk.js",
+    "static/js/3.c023ec97.chunk.js.map": "/KG-E-Book/static/js/3.c023ec97.chunk.js.map",
+    "index.html": "/KG-E-Book/index.html",
+    "static/css/2.850f75a3.chunk.css.map": "/KG-E-Book/static/css/2.850f75a3.chunk.css.map",
+    "static/css/main.53860222.chunk.css.map": "/KG-E-Book/static/css/main.53860222.chunk.css.map",
+    "static/js/2.7541fd62.chunk.js.LICENSE.txt": "/KG-E-Book/static/js/2.7541fd62.chunk.js.LICENSE.txt",
+    "static/media/AboutUs.9a959d77.svg": "/KG-E-Book/static/media/AboutUs.9a959d77.svg",
+    "static/media/AkshayMK1.341669b7.jpg": "/KG-E-Book/static/media/AkshayMK1.341669b7.jpg",
+    "static/media/mdb.css": "/KG-E-Book/static/media/arrow_right.0897f985.svg",
+    "static/media/demo.28b89781.svg": "/KG-E-Book/static/media/demo.28b89781.svg",
+    "static/media/error404.42417d14.svg": "/KG-E-Book/static/media/error404.42417d14.svg",
+    "static/media/all.min.css": "/KG-E-Book/static/media/fa-solid-900.f4f93856.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83556268.js",
+    "static/css/2.850f75a3.chunk.css",
+    "static/js/2.7541fd62.chunk.js",
+    "static/css/main.53860222.chunk.css",
+    "static/js/main.1b18c431.chunk.js"
+  ]
+}
