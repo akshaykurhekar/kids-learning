@@ -1,5 +1,4 @@
 import {Row,Col,Image,Container,Jumbotron} from 'react-bootstrap';
-import Practicals from '../component/tspractical';
 
 import Navbar from '../component/navbar';
 import Footer from '../component/footer';
