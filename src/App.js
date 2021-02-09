@@ -18,13 +18,13 @@ function App() {
     <div className="App">         
       <Router>        
             <Switch>
-                <Route path={"/"} component={Home} exact />
-                <Route path={"/alphabets"} component={Alphabets } exact /> 
-                <Route path={"/numbers"} component={Numbers} exact />
-                <Route path={"/table"} component={Tables} exact />
-                <Route path={"/words"} component={Words} exact />
-                <Route path={"/practice"} component={Practice} exact /> 
-                <Route path={"/About"} component={About} exact />                
+                <Route path={"https://akshaykurhekar.github.io/kids-learning/"} component={Home} exact />
+                <Route path={"https://akshaykurhekar.github.io/alphabets"} component={Alphabets } exact /> 
+                <Route path={"https://akshaykurhekar.github.io/numbers"} component={Numbers} exact />
+                <Route path={"https://akshaykurhekar.github.io/table"} component={Tables} exact />
+                <Route path={"https://akshaykurhekar.github.io/words"} component={Words} exact />
+                <Route path={"https://akshaykurhekar.github.io/practice"} component={Practice} exact /> 
+                <Route path={"https://akshaykurhekar.github.io/About"} component={About} exact />                
                 <Route component={Error}  />  
             </Switch>
         </Router>    
