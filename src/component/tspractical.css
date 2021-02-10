@@ -1,4 +1,5 @@
 .style{
     z-index: -1;
-    position: absolute;
+    position: relative;
+    background-color: blue;
 }

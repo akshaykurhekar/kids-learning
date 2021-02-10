@@ -4,6 +4,10 @@ h1{
     font-family:'Hachi Maru Pop', cursive;
 }
 
+/* .Navbar{
+     background-color: rgb(255, 255, 255); 
+} */
+
 .dropdown:hover>.dropdown-menu {
     display: block;
   }
