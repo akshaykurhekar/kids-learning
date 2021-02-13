@@ -121,7 +121,7 @@ function Numbers() {
     <Accordion.Collapse eventKey="1">
       <Card.Body>
       <Row>
-    {[...Array(31)].map((x, i) =>
+    {[...Array(30)].map((x, i) =>
           <Col md="2" key={i} className="media-col" >
           <Card className="mb-3 card-style">
            

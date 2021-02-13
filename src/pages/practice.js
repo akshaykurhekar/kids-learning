@@ -1,10 +1,12 @@
 import React from "react";
 import { ReactSketchCanvas } from "react-sketch-canvas";
+import Navbar from '../component/navbar';
 import Footer from '../component/footer';
 
 const styles = {
   border: "0.0625rem solid #9c9c9c",
-  borderRadius: "0.25rem"
+  borderRadius: "0.25rem",
+  hight:"10rem"
 };
 
 const Canvas = class extends React.Component {
@@ -17,10 +19,13 @@ const Canvas = class extends React.Component {
   render() {
     return (
       <div>
+          <Navbar/>
+          <br/>
         <ReactSketchCanvas
           ref={this.canvas}
-          strokeWidth={5}
+          strokeWidth={5} // pen width
           strokeColor="black"
+          style={styles}
         />
         <button
           onClick={() => {
@@ -35,6 +40,13 @@ const Canvas = class extends React.Component {
         >
           Get Image
         </button>
+        <ReactSketchCanvas
+          ref={this.canvas}
+          strokeWidth={5} // pen width
+          strokeColor="black"
+          style={styles}
+          height="50"
+        />
         <Footer/>
       </div>
     );

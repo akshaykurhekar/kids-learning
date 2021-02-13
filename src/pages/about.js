@@ -20,7 +20,7 @@ function About() {
     
     <br/><br/>
         
-       <h1>Open source</h1>
+       <h1>Akshay Manohar Rao Kurhekar</h1>
        <h2>This website is for learning purpose </h2>
        
            </Col>
