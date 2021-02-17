@@ -7,7 +7,7 @@ import Words from './pages/words';
 import Practice from './pages/practice';
 import Error from './pages/error';
 import Tables from './pages/table';
-import { BrowserRouter as Router,  
+import { HashRouter as Router,  
         Switch,
         Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
