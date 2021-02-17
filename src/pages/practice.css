@@ -1,9 +1,19 @@
-iframe{
-    height:42rem;
-     width: 100%;
-}
 
 input{
     /* border-radius: 50%; */
     height:1.5rem;
+}
+
+.media{
+    /* background-color: black; */
+    display:none;
+  }
+
+@media only screen and (max-width: 600px) {
+
+    .media{
+      display:block;
+      /* background-color: rgb(204, 10, 10); */
+    }
+
 }
