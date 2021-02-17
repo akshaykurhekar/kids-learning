@@ -2,7 +2,7 @@ import {React,useState,useRef} from "react";
 import { ReactSketchCanvas } from "react-sketch-canvas";
 import Navbar1 from '../component/navbar';
 import Footer from '../component/footer';
-import {Button, Nav , Navbar,Form } from 'react-bootstrap';
+import {Button, Nav , Navbar} from 'react-bootstrap';
 import './practice.css';
 
 function Canvas(){ 
@@ -12,7 +12,7 @@ function Canvas(){
     const [color,setColor]=useState('#EC9418');
     const [Backcolor,setBackColor]=useState('#E5FFF7');
     const [strokeWidth,setStrokeWidth]=useState('4');
-    const [eraseWidth,setEraseWidth]=useState('8');
+    const [eraseWidth,setEraseWidth]=useState(35);
 
     const eventHandel=(e)=>{
         setColor(e.target.value);
@@ -49,11 +49,11 @@ function Canvas(){
         }
       };
     
-      const clearHandler = () => {
-        const clearCanvas = canvasRef.current?.clearCanvas;
+      const resetCanvasHandler = () => {
+        const resetCanvas = canvasRef.current?.resetCanvas;
     
-        if (clearCanvas) {
-          clearCanvas();
+        if (resetCanvas) {
+          resetCanvas();
         }
       };
 
@@ -99,8 +99,7 @@ function Canvas(){
          <input type="range" min="1" max="80" value={eraseWidth} onInput={(e)=> eraseWidthHandler(e)} />      
          <Button className="btn btn-outline-orange" onClick={()=>undoHandler() }>Undo</Button>
          <Button className="btn btn-outline-lime " onClick={()=>redoHandler() }>Redo</Button>
-         {/* <Button variant="outline-dark" className="btn btn-warning" onClick={()=>resetCanvasHandler() }>ReSet</Button> */}
-         <Button variant="outline-danger" onClick={()=>clearHandler() }>Clear Bored</Button>
+         <Button variant="outline-danger" onClick={()=>resetCanvasHandler() }>Reset</Button>
            
          </div>
       </Nav>

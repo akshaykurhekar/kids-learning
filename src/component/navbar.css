@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 
-h1{
+.heading{
     font-family:'Hachi Maru Pop', cursive;
+    font-size: xx-large;
+    font-weight: 600;
 }
 
 /* .Navbar{
