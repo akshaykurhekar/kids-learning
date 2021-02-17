@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@520&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script:wght@520&display=swap');
+
 .about {
     margin-top: 3%;
-    /* font-family: 'Source Code Pro', monospace; */
+    font-family: 'Dancing Script', cursive;
   }
   
   .profile_image{
       position: relative;
-      width:30%;
+      width:10rem;
       /* margin-top: -3rem; */
   }
 
@@ -13,3 +16,18 @@
       align-items: left;
       width: 80%;
   }
+
+  .name{
+      color:rgb(2, 14, 24);
+       font-size: medium; 
+       font-family: 'Comfortaa', cursive;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .svg{
+      display:none;
+      /* background-color: rgb(204, 10, 10); */
+    }
+
+}

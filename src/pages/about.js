@@ -11,16 +11,16 @@ function About() {
     <div >     
         <Navbar/>
        <Row>
-           <Col>
+           <Col className="md-col-6 svg" >
            <img className="about_svg" src={AboutUs} alt="about us" /> 
            </Col>
-           <Col className="text-center about">
+           <Col  className="md-col-6 text-center about ">
 
            <Image className="profile_image" src={akshay} thumbnail roundedCircle />    
     
     <br/><br/>
         
-       <h1>Akshay Manohar Rao Kurhekar</h1>
+       <p className="name">Akshay Manohar Kurhekar</p>
        <h2>This website is for learning purpose </h2>
        
            </Col>
