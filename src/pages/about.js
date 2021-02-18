@@ -1,4 +1,4 @@
-import {Row,Col,Image,Container,Jumbotron} from 'react-bootstrap';
+import {Row,Col,Image} from 'react-bootstrap';
 
 import Navbar from '../component/navbar';
 import Footer from '../component/footer';
@@ -26,10 +26,7 @@ function About() {
            </Col>
        </Row>
     <Footer/>
-     
-       
-
-
+   
     </div>
   );
 }

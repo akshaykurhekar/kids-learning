@@ -9,16 +9,15 @@ import Plants from '../Data/Plants.json';
 import Flower from '../Data/Flower.json';
 import Months from '../Data/Months.json';
 import Days from '../Data/Days.json';
-import Planets from '../Data/Planets.json';
+import PlanetsList from '../Data/Planets.js';
 import './about.css';
 import akshay from './AkshayMK1.jpg';
-import Venus from '../pages/PlanetsImg/Venus.jpg';
-import Earth from '../pages/PlanetsImg/Earth.jpg';
+
 
 
 function ControlledTabs() {
     const [key, setKey] = useState('home');
-    
+      
     return (
       <Tabs
         id="controlled-tab-example"
@@ -38,16 +37,9 @@ function ControlledTabs() {
             {
                 GeneralWords.map((variant, idx) => (
                     <Col md="3" key={idx} className="media-col" >
-                    {/* <Card className="mb-3 card-style">              */}
-                      {/* <Card.Body style={{padding:'1rem'}}> */}
                         <Card.Title>
                             {variant.val}
-                            </Card.Title>
-                        {/* <Card.Text>
-                          <Image src={variant.src} alt="test.." width="100" />
-                        </Card.Text> */}
-                      {/* </Card.Body>
-                    </Card> */}
+                        </Card.Title>
                     </Col>
                   ))
             }    
@@ -148,24 +140,9 @@ function ControlledTabs() {
         </Tab>
         <Tab eventKey="planets" title="planets" >
         <br/>
-        <Row>        
-            {
-               
-               Planets.map((variant, idx) => (
-                    <Col md="3" key={idx} className="media-col text-center" >
-                    <Card className="mb-3 card-style">             
-                      <Card.Body style={{padding:'1rem'}}>
-                        <Card.Title>
-                        <Image src={variant.val} alt={variant.val} roundedCircle style={{padding:'1rem',width:'200px'}} />
-                                <br/>                                
-                            {variant.val}
-                            </Card.Title>                     
-                       </Card.Body>
-                    </Card> 
-                    </Col>
-                  ))
-            }    
-            </Row>
+            
+            <PlanetsList/> 
+        
         </Tab>
         <Tab eventKey="Months" title="Months" >
         <br/>
@@ -280,14 +257,14 @@ function Words() {
   return (
     <div>    
         <Navbar/>
-        <br/>        
-<Container>
- 
- <br/>
-    <ControlledTabs/>          
-  
-</Container>
-<Footer/>
+            <br/>        
+        <Container>
+            <br/>
+            <ControlledTabs/>
+           
+        </Container>
+
+        <Footer/>
     </div>
   );
 }
