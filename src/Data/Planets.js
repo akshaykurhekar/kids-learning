@@ -8,10 +8,20 @@ import Saturn from './PlanetsImg/Saturn.jpg';
 import Uranus from './PlanetsImg/Uranus.jpg';
 import Neptune from './PlanetsImg/Neptune.jpg';
 import Pluto from './PlanetsImg/Pluto.jpg';
+import Sun from './PlanetsImg/Sun.jpg';
+import Moon from './PlanetsImg/Moon.jpg';
 
 function Planets() {
    
    const Planets = [
+        {
+            photo:Sun,
+            val: "Sun"
+        },
+        {
+            photo:Moon,
+            val: "Moon"
+        },
         {
             photo:Mercury,
             val: "Mercury"

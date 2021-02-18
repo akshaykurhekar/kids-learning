@@ -6,7 +6,7 @@ import GeneralWords from '../Data/words.json';
 import Color from '../Data/Color.json';
 import Animals from '../Data/Animals.json';
 import Plants from '../Data/Plants.json';
-import Flower from '../Data/Flower.json';
+import Flower from '../Data/Flower.js';
 import Months from '../Data/Months.json';
 import Days from '../Data/Days.json';
 import PlanetsList from '../Data/Planets.js';
@@ -29,7 +29,7 @@ function ControlledTabs() {
         <Accordion defaultActiveKey="0">
   <Card>
     <Accordion.Toggle as={Card.Header} eventKey="0">
-      Top 30 
+      Top 100 general Words. 
     </Accordion.Toggle>
     <Accordion.Collapse eventKey="0">
       <Card.Body>
@@ -47,14 +47,7 @@ function ControlledTabs() {
       </Card.Body>
     </Accordion.Collapse>
   </Card>
-  <Card>
-    <Accordion.Toggle as={Card.Header} eventKey="1">
-      Click me!
-    </Accordion.Toggle>
-    <Accordion.Collapse eventKey="1">
-      <Card.Body>Hello! I'm another body</Card.Body>
-    </Accordion.Collapse>
-  </Card>
+  
 </Accordion>
        
         </Tab>
@@ -80,23 +73,7 @@ function ControlledTabs() {
         </Tab>
         <Tab eventKey="Birds" title="Birds">
         <br/>
-        <Row> 
-            {
-                Flower.map((variant, idx) => (
-                    <Col md="3" key={idx} className="media-col" >
-                    <Card className="mb-3 card-style">             
-                      <Card.Body style={{padding:'1rem','text-align':'center'}}>
-                        <Card.Title>
-                        <Image src={akshay}  roundedCircle style={{padding:'1rem',width:'200px'}} />
-                                <br/>                                
-                            {variant.val}
-                            </Card.Title>                     
-                       </Card.Body>
-                    </Card> 
-                    </Col>
-                  ))
-            }    
-            </Row>
+            <Flower/>
         </Tab>
         <Tab eventKey="Plants" title="Plants" >
         <br/>
@@ -120,25 +97,9 @@ function ControlledTabs() {
         </Tab>
         <Tab eventKey="Flower" title="Flower" >
         <br/>
-        <Row> 
-            {
-                Flower.map((variant, idx) => (
-                    <Col md="3" key={idx} className="media-col" >
-                    <Card className="mb-3 card-style">             
-                      <Card.Body style={{padding:'1rem','text-align':'center'}}>
-                        <Card.Title>
-                        <Image src={akshay}  roundedCircle style={{padding:'1rem',width:'200px'}} />
-                                <br/>                                
-                            {variant.val}
-                            </Card.Title>                     
-                       </Card.Body>
-                    </Card> 
-                    </Col>
-                  ))
-            }    
-            </Row>
+            <Flower/>
         </Tab>
-        <Tab eventKey="planets" title="planets" >
+        <Tab eventKey="planets" title="Planets" >
         <br/>
             
             <PlanetsList/> 
@@ -209,7 +170,7 @@ function ControlledTabs() {
             }    
             </Row>
         </Tab>
-        <Tab eventKey="Thinks" title="Thinks" >
+        {/* <Tab eventKey="Thinks" title="Thinks" >
         <br/>
         <Row> 
             {
@@ -248,7 +209,7 @@ function ControlledTabs() {
                   ))
             }    
             </Row>
-        </Tab>
+        </Tab> */}
       </Tabs>
     );
   }
