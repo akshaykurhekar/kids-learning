@@ -66,6 +66,7 @@ function Numbers() {
   return (
     <div>    
         <Navbar/>
+        
         <br/>        
 <Container>
          

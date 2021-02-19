@@ -4,8 +4,8 @@ import Navbar from '../component/navbar';
 import Footer from '../component/footer';
 import GeneralWords from '../Data/words.json';
 import Color from '../Data/Color.json';
-import Animals from '../Data/Animals.json';
-import Plants from '../Data/Plants.json';
+import Animals from '../Data/Animals.js';
+// import Plants from '../Data/Plants.json';
 import Flower from '../Data/Flower.js';
 import Months from '../Data/Months.json';
 import Days from '../Data/Days.json';
@@ -51,59 +51,20 @@ function ControlledTabs() {
 </Accordion>
        
         </Tab>
-        <Tab eventKey="Animals" title="Animals">
-        <br/>
-        <Row> 
-            {
-                Animals.map((variant, idx) => (
-                    <Col md="3" key={idx} className="media-col" >
-                    <Card className="mb-3 card-style">             
-                      <Card.Body style={{padding:'1rem','text-align':'center'}}>
-                        <Card.Title>
-                        <Image src={akshay}  roundedCircle style={{padding:'1rem',width:'200px'}} />
-                                <br/>                                
-                            {variant.val}
-                            </Card.Title>                     
-                       </Card.Body>
-                    </Card> 
-                    </Col>
-                  ))
-            }    
-            </Row>
-        </Tab>
-        <Tab eventKey="Birds" title="Birds">
-        <br/>
+        {/* <Tab eventKey="Animals" title="Animals">
+        <br/>       
+        </Tab> */}
+        {/* <Tab eventKey="Birds" title="Birds">
+         <br/>
             <Flower/>
-        </Tab>
-        <Tab eventKey="Plants" title="Plants" >
-        <br/>
-        <Row> 
-            {
-                Plants.map((variant, idx) => (
-                    <Col md="3" key={idx} className="media-col" >
-                    <Card className="mb-3 card-style">             
-                      <Card.Body style={{padding:'1rem','text-align':'center'}}>
-                        <Card.Title>
-                        <Image src={akshay}  roundedCircle style={{padding:'1rem',width:'200px'}} />
-                                <br/>                                
-                            {variant.val}
-                            </Card.Title>                     
-                       </Card.Body>
-                    </Card> 
-                    </Col>
-                  ))
-            }    
-            </Row>
-        </Tab>
+        </Tab> */}
         <Tab eventKey="Flower" title="Flower" >
-        <br/>
+         <br/>
             <Flower/>
         </Tab>
         <Tab eventKey="planets" title="Planets" >
-        <br/>
-            
-            <PlanetsList/> 
-        
+         <br/>            
+            <PlanetsList/>         
         </Tab>
         <Tab eventKey="Months" title="Months" >
         <br/>
@@ -134,10 +95,7 @@ function ControlledTabs() {
                       <Card.Body style={{padding:'1rem'}}>
                         <Card.Title>
                             {idx+1}. {variant.val}
-                            </Card.Title>
-                         {/* <Card.Text>
-                          <Image src={variant.src} alt="test.." width="100" />
-                        </Card.Text>  */}
+                            </Card.Title>                         
                        </Card.Body>
                     </Card> 
                     </Col>
@@ -170,46 +128,7 @@ function ControlledTabs() {
             }    
             </Row>
         </Tab>
-        {/* <Tab eventKey="Thinks" title="Thinks" >
-        <br/>
-        <Row> 
-            {
-                Flower.map((variant, idx) => (
-                    <Col md="3" key={idx} className="media-col" >
-                    <Card className="mb-3 card-style">             
-                      <Card.Body style={{padding:'1rem','text-align':'center'}}>
-                        <Card.Title>
-                        <Image src={akshay}  roundedCircle style={{padding:'1rem',width:'200px'}} />
-                                <br/>                                
-                            {variant.val}
-                            </Card.Title>                     
-                       </Card.Body>
-                    </Card> 
-                    </Col>
-                  ))
-            }    
-            </Row>
-        </Tab>
-        <Tab eventKey="Places" title="Places" >
-        <br/>
-        <Row> 
-            {
-                Flower.map((variant, idx) => (
-                    <Col md="3" key={idx} className="media-col" >
-                    <Card className="mb-3 card-style">             
-                      <Card.Body style={{padding:'1rem','text-align':'center'}}>
-                        <Card.Title>
-                        <Image src={akshay}  roundedCircle style={{padding:'1rem',width:'200px'}} />
-                                <br/>                                
-                            {variant.val}
-                            </Card.Title>                     
-                       </Card.Body>
-                    </Card> 
-                    </Col>
-                  ))
-            }    
-            </Row>
-        </Tab> */}
+        
       </Tabs>
     );
   }
@@ -218,6 +137,7 @@ function Words() {
   return (
     <div>    
         <Navbar/>
+        
             <br/>        
         <Container>
             <br/>

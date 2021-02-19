@@ -97,7 +97,7 @@ function Flowers() {
         <Card className="mb-3 card-style" style={{width:'250',height:'250'}}>             
             <Card.Body style={{padding:'1rem'}}>
             <Card.Title>
-               <Image src={variant.photo} alt={variant.val} rectangle style={{padding:'1rem',width:'200px'}} />
+               <Image src={variant.photo} alt={variant.val} rounded style={{padding:'1rem',width:'200px'}} />
                <br/>                                
                {variant.val}
             </Card.Title>                     

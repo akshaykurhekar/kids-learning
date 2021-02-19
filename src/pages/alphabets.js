@@ -13,6 +13,7 @@ function Numbers() {
   return (
     <div className="alphabets">    
         <Navbar/>
+        
         <br/>        
 <Container>
 <Card className="mb-3 card-style">

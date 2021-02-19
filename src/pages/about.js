@@ -4,12 +4,14 @@ import Navbar from '../component/navbar';
 import Footer from '../component/footer';
 import akshay from './AkshayMK1.jpg';
 import AboutUs from './AboutUs.svg';
+import Practicals from '../component/tspractical';
 import './about.css';
 
 function About() {
   return (
     <div >     
         <Navbar/>
+        <Practicals/>
        <Row>
            <Col className="md-col-6 svg" >
            <img className="about_svg" src={AboutUs} alt="about us" /> 
