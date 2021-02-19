@@ -3,9 +3,13 @@ import {Row,Col,Image} from 'react-bootstrap';
 import Navbar from '../component/navbar';
 import Footer from '../component/footer';
 import akshay from './AkshayMK1.jpg';
-import AboutUs from './AboutUs.svg';
+import AboutUs from './SVG/aboutUs.svg';
 import Practicals from '../component/tspractical';
 import './about.css';
+import whatsapp from './SVG/whatsapp.svg';
+import github from './SVG/github.svg';
+import linkedin from './SVG/linkedin.svg';
+import mail from './SVG/gmail.svg';
 
 function About() {
   return (
@@ -23,8 +27,16 @@ function About() {
     <br/><br/>
         
        <p className="name">Akshay Manohar Kurhekar</p>
-       <h2>This website is for learning purpose </h2>
-       
+       <h2>Student of Computer Science
+Love to play with javaScript. This is my small contribution to the society for kids Learning,
+Those who want to connect with me, follow my social handles
+ </h2>
+       <div className="text-center p-3">
+        <a href="tel:+919552259961"><img src={whatsapp} alt="whatsapp" width="50" /></a>
+        <a href="https://www.linkedin.com/in/akshay-kurhekar-64438a168/" rel="noreferrer" target="_blank"><img src={linkedin} alt="linkedin" width="50" /></a>
+        <a href="https://github.com/akshaykurhekar" rel="noreferrer" target="_blank"><img src={github} alt="github" width="50" /></a>
+        <a href={`mailto:kurhekar145@gmail.com`}><img src={mail} alt="mail" width="50" /></a>
+       </div>
            </Col>
        </Row>
     <Footer/>

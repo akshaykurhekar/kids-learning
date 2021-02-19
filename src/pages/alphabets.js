@@ -2,20 +2,19 @@ import {React} from 'react';
 import EngData from '../Data/EngData.json';
 import Data1 from '../Data/Mdata.json';
 import MData from '../Data/M1data.json';
-import {Container,Jumbotron,Card,Row,Col,Image} from 'react-bootstrap';
+import {Container,Card,Row,Col} from 'react-bootstrap';
 import Navbar from '../component/navbar';
 import Footer from '../component/footer';
 import './alphabets.css';
-import Test from './AkshayMK1.jpg';
 
 function Numbers() {
 
   return (
-    <div className="alphabets">    
+    <div >    
         <Navbar/>
         
         <br/>        
-<Container>
+<Container className="alphabets"> 
 <Card className="mb-3 card-style">
         <Card.Body>        
     <Row>

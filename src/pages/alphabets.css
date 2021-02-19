@@ -1,9 +1,7 @@
 .alphabets{
     text-align: center;
 }
-.card-style{
-    /* border-radius:2%; */
-    }
+
 .card-style:hover{
     border:1px solid black;
     }

@@ -1,22 +1,21 @@
 import {React, useState} from 'react';
-import {Container,Tab,Tabs,Row,Col,Card,Accordion,Image} from 'react-bootstrap';
+import {Container,Tab,Tabs,Row,Col,Card,Accordion} from 'react-bootstrap';
 import Navbar from '../component/navbar';
 import Footer from '../component/footer';
 import GeneralWords from '../Data/words.json';
 import Color from '../Data/Color.json';
-import Animals from '../Data/Animals.js';
+// import Animals from '../Data/Animals.js';
 // import Plants from '../Data/Plants.json';
 import Flower from '../Data/Flower.js';
 import Months from '../Data/Months.json';
 import Days from '../Data/Days.json';
 import PlanetsList from '../Data/Planets.js';
 import './about.css';
-import akshay from './AkshayMK1.jpg';
 
 
 
 function ControlledTabs() {
-    const [key, setKey] = useState('home');
+    const [key, setKey] = useState('Flower');
       
     return (
       <Tabs
@@ -43,7 +42,7 @@ function ControlledTabs() {
                     </Col>
                   ))
             }    
-            </Row>
+      </Row>
       </Card.Body>
     </Accordion.Collapse>
   </Card>

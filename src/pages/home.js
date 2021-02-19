@@ -1,17 +1,15 @@
-import {Row,Col,Image,Container,Jumbotron} from 'react-bootstrap';
+import {Row,Col,Container} from 'react-bootstrap';
 import Practicals from '../component/tspractical';
 import Navbar from '../component/navbar';
 import Footer from '../component/footer';
 
-import Number from './SVG/mathematics-animate.svg';
+import Number from './SVG/tables.svg';
 import AboutUs from './SVG/aboutUs.svg';
-import svg1 from './SVG/Notebook-amico.svg';
-import svg3 from './SVG/number.svg';
-import svg4 from './SVG/abc.svg';
-import svg5 from './SVG/notes-animate.svg';
-import svg6 from './SVG/Kids Studying from Home-pana.svg';
-import svg7 from './SVG/kids wearing masks at school-amico.svg';
-import svg8 from './SVG/flower.svg';
+import svg1 from './SVG/numbers123.svg';
+import abc from './SVG/Abc.svg';
+import practice from './SVG/practice.svg';
+import HomeSvg from './SVG/Kids.svg';
+import words from './SVG/words.svg';
 import './about.css';
 
 function Home() {
@@ -22,18 +20,47 @@ function Home() {
         <Container>        
             <h1> Learn With Joy </h1>
         </Container>
-        <a href="/words"><img src={svg1} alt="demo svg" width="300" /></a>
-        <img src={Number} alt="demo svg" width="300" />        
-        
-        <img src={AboutUs} alt="demo svg" width="300" />
-        <img src={svg3} alt="demo svg" width="300" />
-        <img src={svg4} alt="demo svg" width="300" />        
-        <img src={svg5} alt="demo svg" width="300" />        
-        <img src={svg6} alt="demo svg" width="300" />
-        <img src={svg7} alt="demo svg" width="300" />        
-        <img src={svg8} alt="demo svg" width="300" /> 
-        <br/>
-         
+        <Row>
+            <Col md="5">
+            <img src={HomeSvg} alt="demo svg" width="600" />
+            </Col>
+            <Col md="7">
+                <Row className="text-center">
+                    <Col md="4" className="p-2" >
+                    <a href="/kids-learning/#/alphabets"><img src={abc} alt="demo svg" width="150" /></a>
+                    </Col>
+                    <Col md="4" className="p-2">
+                    <a href="/kids-learning/#/words"><img src={words} alt="demo svg" width="150" /></a>
+                    </Col>
+                    <Col md="4" className="p-2">
+                    <a href="/kids-learning/#/numbers"><img src={svg1} alt="demo svg" width="150" /></a>
+                    </Col>                   
+                </Row>
+                <Row className="text-center p-2 m-1">
+                    <Col md="2" >                        
+                    </Col>
+                    <Col md="4" className="mt-5">
+                    <a href="/kids-learning/#/table"><img src={Number} alt="demo svg" width="150" /> </a>
+                    </Col>
+                    <Col md="4">
+                    <a href="/kids-learning/#/practice"><img src={practice} alt="demo svg" width="230" /></a>
+                    </Col>
+                    <Col md="2">                    
+                    </Col>                   
+                </Row>
+                <Row className="text-center p-2 m-1">
+                    <Col md="4" >                        
+                    </Col>
+                    <Col md="4">
+                    <a href="/kids-learning/#/about"><img src={AboutUs} alt="demo svg" width="230" /></a>
+                    </Col>
+                    <Col md="4">                    
+                    </Col>                   
+                </Row>
+                
+            </Col>    
+        </Row>
+                
         <Footer/>    
     </div>
   );
