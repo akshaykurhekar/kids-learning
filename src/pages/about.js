@@ -32,10 +32,10 @@ Love to play with javaScript. This is my small contribution to the society for k
 Those who want to connect with me, follow my social handles
  </h2>
        <div className="text-center p-3">
-        <a href="tel:+919552259961"><img src={whatsapp} alt="whatsapp" width="50" /></a>
-        <a href="https://www.linkedin.com/in/akshay-kurhekar-64438a168/" rel="noreferrer" target="_blank"><img src={linkedin} alt="linkedin" width="50" /></a>
-        <a href="https://github.com/akshaykurhekar" rel="noreferrer" target="_blank"><img src={github} alt="github" width="50" /></a>
-        <a href={`mailto:kurhekar145@gmail.com`}><img src={mail} alt="mail" width="50" /></a>
+        <a className="p-2" href="tel:+919552259961"><img src={whatsapp} alt="whatsapp" width="50" /></a>
+        <a className="p-2" href="https://www.linkedin.com/in/akshay-kurhekar-64438a168/" rel="noreferrer" target="_blank"><img src={linkedin} alt="linkedin" width="50" /></a>
+        <a className="p-2" href="https://github.com/akshaykurhekar" rel="noreferrer" target="_blank"><img src={github} alt="github" width="50" /></a>
+        <a className="p-2" href={`mailto:kurhekar145@gmail.com`}><img src={mail} alt="mail" width="50" /></a>
        </div>
            </Col>
        </Row>
