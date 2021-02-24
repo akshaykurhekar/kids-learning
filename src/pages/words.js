@@ -4,7 +4,7 @@ import Navbar from '../component/navbar';
 import Footer from '../component/footer';
 import GeneralWords from '../Data/words.json';
 import Color from '../Data/Color.json';
-// import Animals from '../Data/Animals.js';
+import States from '../Data/States.js';
 // import Plants from '../Data/Plants.json';
 import Flower from '../Data/Flower.js';
 import Months from '../Data/Months.json';
@@ -127,7 +127,10 @@ function ControlledTabs() {
             }    
             </Row>
         </Tab>
-        
+        <Tab eventKey="states" title="States">
+         <br/>            
+            <States/>         
+        </Tab>        
       </Tabs>
     );
   }

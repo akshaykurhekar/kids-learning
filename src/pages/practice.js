@@ -114,7 +114,7 @@ function Canvas(){
           strokeWidth={strokeWidth}
           strokeColor={color}
           canvasColor={Backcolor}        
-          eraserWidth={eraseWidth}
+          eraserWidth={eraseWidth}         
         />              
         <Footer/>
       </div>
