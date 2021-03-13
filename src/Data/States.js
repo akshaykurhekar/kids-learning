@@ -165,15 +165,14 @@ function States() {
     <Row>   
      {
         Data.map((variant, idx) => (
-        <Col md="3" key={idx} className="media-col text-center"> 
-        <Card className="mb-3 card-style" style={{width:'250',height:'250'}}>             
-            <Card.Body style={{padding:'1rem'}}>
-            <Card.Title>                   
-               {variant.state}
-            </Card.Title>
-            <Image src={variant.photo} alt={variant.val} rounded style={{padding:'1rem',width:'200px'}} />                     
-                <br/>
-                {variant.capital}
+        <Col md="4" key={idx} className="media-col text-center"> 
+        <Card className="mb-3 card-style">             
+            <Card.Body>
+            <p className="Title">                   
+               {idx+1}. {variant.state}
+            </p>
+            <Image src={variant.photo} alt={variant.val} rounded style={{width:'250px'}} />                     
+                <p className="subTitle">{variant.capital}</p> 
             </Card.Body>
         </Card> 
         </Col>

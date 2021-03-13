@@ -82,7 +82,7 @@ function ControlledTabs() {
                     </Col>
                   ))
             }    
-            </Row>
+        </Row>
         </Tab>
         <Tab eventKey="Days" title="Days" >
         <br/>
@@ -102,7 +102,7 @@ function ControlledTabs() {
             }    
             </Row>
         </Tab>
-        <Tab eventKey="Colors" title="Colors" >
+        <Tab eventKey="Colors" title="Colors">
             <br/>
         <Row> 
             {
@@ -143,8 +143,7 @@ function Words() {
             <br/>        
         <Container>
             <br/>
-            <ControlledTabs/>
-           
+            <ControlledTabs style={{Color:'red'}}/>           
         </Container>
 
         <Footer/>

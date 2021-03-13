@@ -1,149 +1,155 @@
 [
     {
         "val":"क",
-        "url":"Apple"         
+        "id":"1" ,
+        "1":{
+            "val":["क","क","क","क","क","क"]            
+        }        
     },
     {
         "val":"ख",
-        "url":"boll"
+        "id":"2",
+        "2":{
+            "val":["क","क","क","क","क","kha"]            
+        }
     },
     {
         "val":"ग",
-        "url":"./A.png"
+        "id":3
     },
     {
         "val":"घ",
-        "url":"./A.png"
+        "id":4
     },
     {
         "val":"ङ",
-        "url":"Apple"
+        "id":5
     },
     {
         "val":" च",
-        "url":"boll"
+        "id":6
     },
     {
         "val":"छ ",
-        "url":"./A.png"
+        "id":7
     },
     {
         "val":"ज ",
-        "url":"./A.png"
+        "id":8
     },
     {
         "val":"झ ",
-        "url":"Apple"
+        "id":9
     },
     {
         "val":"ञ ",
-        "url":"boll"        
+        "id":10        
     },
     {
         "val":"ट ",
-        "url":"./A.png"
+        "id":11
          
     },
     {
         "val":"ठ ",
-        "url":"./A.png"         
+        "id":12         
     },
     {
         "val":"ड ",
-        "url":"Apple"         
+        "id":13                          
     },
     {
         "val":"ढ ",
-        "url":"boll"
+        "id":14 
     },
     {
         "val":"ण ",
-        "url":"./A.png"
+        "id":15
     },
     {
         "val":"त ",
-        "url":"./A.png"
+        "id":16
     },
     {
         "val":"थ ",
-        "url":"Apple"
+        "id":17
     },
     {
         "val":"द ",
-        "url":"boll"
+        "id":18
     },
     {
         "val":"ध ",
-        "url":"./A.png"
+        "id":19
     },
     {
         "val":"न ",
-        "url":"./A.png"
+        "id":20
     },
     {
         "val":"प",
-        "url":"Apple"
+        "id":21
     },
     {
         "val":" फ ",
-        "url":"boll"        
+        "id":  22      
     },
     {
         "val":"ब ",
-        "url":"./A.png"
+        "id":23
          
     },
     {
         "val":"भ",
-        "url":"Apple"
+        "id":24
     },
     {
         "val":" म",
-        "url":"boll"        
+        "id":  25      
     },
     {
         "val":" य ",
-        "url":"./A.png"
+        "id":26
          
     },
     {
         "val":"र ",
-        "url":"./A.png"         
+        "id":  27       
     },
     {
         "val":"ल ",
-        "url":"Apple"         
+        "id": 28        
     },
     {
         "val":"व ",
-        "url":"boll"
+        "id":29
     },
     {
         "val":"श ",
-        "url":"./A.png"
+        "id":30
     },
     {
         "val":"ष ",
-        "url":"./A.png"
+        "id":31
     },
     {
         "val":"स ",
-        "url":"Apple"
+        "id":32
     },
     {
         "val":"ह ",
-        "url":"boll"
+        "id":33
     },
     {
         "val":"ळ ",
-        "url":"./A.png"
+        "id":34
     },
     {
         "val":"क्ष",
-        "url":"./A.png"
+        "id":35
     },
     {
         "val":"ज्ञ ",
-        "url":"./A.png"
+        "id":36
     }
 ]
