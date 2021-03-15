@@ -12,6 +12,7 @@ import Days from '../Data/Days.json';
 import PlanetsList from '../Data/Planets.js';
 import './about.css';
 
+import Speech from "./Speech/Speech";
 
 
 function ControlledTabs() {
@@ -35,10 +36,12 @@ function ControlledTabs() {
       <Row> 
             {
                 GeneralWords.map((variant, idx) => (
-                    <Col md="3" key={idx} className="media-col" >
+                    <Col md="3" key={idx} className="media-col card-style"  >
+                        <Speech text={variant.val}>
                         <Card.Title>
                             {variant.val}
                         </Card.Title>
+                        </Speech>
                     </Col>
                   ))
             }    
@@ -71,6 +74,7 @@ function ControlledTabs() {
             {
                 Months.map((variant, idx) => (
                     <Col md="3" key={idx} className="media-col" >
+                     <Speech text={variant.val}>   
                     <Card className="mb-3 card-style">             
                       <Card.Body style={{padding:'1rem'}}>
                         <Card.Title>
@@ -79,6 +83,7 @@ function ControlledTabs() {
                          
                        </Card.Body>
                     </Card> 
+                    </Speech>
                     </Col>
                   ))
             }    
@@ -90,13 +95,15 @@ function ControlledTabs() {
             {
                 Days.map((variant, idx) => (
                     <Col md="3" key={idx} className="media-col" >
+                     <Speech text={variant.val}>   
                     <Card className="mb-3 card-style">             
                       <Card.Body style={{padding:'1rem'}}>
                         <Card.Title>
                             {idx+1}. {variant.val}
                             </Card.Title>                         
                        </Card.Body>
-                    </Card> 
+                    </Card>
+                    </Speech> 
                     </Col>
                   ))
             }    
@@ -108,8 +115,9 @@ function ControlledTabs() {
             {
                 Color.map((variant, idx) => (
                     <Col md="3" key={idx} className="media-col" >
+                        <Speech text={variant.val}>
                     <Card className="mb-3 card-style">             
-                      <Card.Body style={{padding:'1rem', display:'flex',direction:'row'}}>                      
+                      <Card.Body style={{padding:'1rem', display:'flex',direction:'row'}}>                    
                         
                         <Card style={{width:'70px',borderRadius:'50px', backgroundColor: variant.val}}>
                                <Card.Body>
@@ -122,6 +130,7 @@ function ControlledTabs() {
                          
                        </Card.Body>
                     </Card> 
+                    </Speech>
                     </Col>
                   ))
             }    

@@ -21,6 +21,8 @@ import Hyacinth from './FlowerImg/Hyacinth.jpg';
 import Daisy from './FlowerImg/Daisy.jpg';
 import Crocus from './FlowerImg/Crocus.jpg';
 
+import Speech from '../pages/Speech/Speech';
+
 function Flowers() {
    
    const Flowers = [
@@ -93,16 +95,20 @@ function Flowers() {
     <Row>   
      {
         Flowers.map((variant, idx) => (
-        <Col md="3" key={idx} className="media-col text-center"> 
-        <Card className="mb-3 card-style" style={{width:'250',height:'250'}}>             
-            <Card.Body style={{padding:'1rem'}}>
-            <Card.Title>
-               <Image src={variant.photo} alt={variant.val} rounded style={{padding:'1rem',width:'200px'}} />
-               <br/>                                
-               {variant.val}
-            </Card.Title>                     
-            </Card.Body>
-        </Card> 
+        <Col md="3" key={idx} className="media-col text-center">
+           
+            <Card className="mb-3 card-style" style={{width:'250',height:'250'}}>             
+                <Card.Body style={{padding:'1rem'}}>
+                <Card.Title>
+                    <Image src={variant.photo} alt={variant.val} rounded style={{padding:'1rem',width:'200px'}} />
+                    <br/>
+                    <Speech text={variant.val}>                                  
+                    {variant.val}
+                    </Speech>
+                </Card.Title>                     
+                </Card.Body>
+            </Card>
+        
         </Col>
         ))
      }

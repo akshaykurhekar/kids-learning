@@ -11,6 +11,8 @@ import Pluto from './PlanetsImg/Pluto.jpg';
 import Sun from './PlanetsImg/Sun.jpg';
 import Moon from './PlanetsImg/Moon.jpg';
 
+import Speech from "../pages/Speech/Speech";
+
 function Planets() {
    
    const Planets = [
@@ -71,7 +73,9 @@ function Planets() {
             <Card.Title>
                <Image src={variant.photo} alt={variant.val} roundedCircle style={{padding:'1rem',width:'200px'}} />
                <br/>                                
-               {variant.val}
+               <Speech text={variant.val}>                                  
+                    {variant.val}
+                    </Speech>
             </Card.Title>                     
             </Card.Body>
         </Card> 

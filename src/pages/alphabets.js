@@ -1,13 +1,16 @@
 import {React, useState} from 'react';
+
 import EngData from '../Data/EngData.json';
 import MarathiAlpha from '../Data/Mdata.json';
 import Barakade from '../Data/M1data.json';
 import {Container,Card,Row,Col, Accordion,Tab} from 'react-bootstrap';
+
 import Navbar from '../component/navbar';
 import Footer from '../component/footer';
 import Test from '../Data/test/test.json';
-import './alphabets.css';
+import Speech from "./Speech/Speech";
 
+import './alphabets.css';
 import TabsDisplay from "../component/Tabs/TabsDisplay";
 
 function Numbers() {
@@ -45,13 +48,15 @@ function Numbers() {
             <Row>
             {
                 EngData.map((variant, idx) => (
-                    <Col md="2" key={idx} className="media-col" >
-                    <Card className="mb-3 card-style">                    
-                        <Card.Body style={{padding:'1rem'}}>
-                        <Card.Title>{variant.val}</Card.Title>                    
-                        </Card.Body>
-                    </Card>
-                    </Col>
+                    <Col md="2" key={idx}  className="media-col" >
+                    <Speech  text={variant.val}>
+                            <Card className="mb-3 card-style">                    
+                                <Card.Body style={{padding:'0.8rem'}}>
+                                <Card.Title>{variant.val}</Card.Title>                    
+                                </Card.Body>
+                            </Card>
+                    </Speech>
+                    </Col>                    
                     ))
             }    
             </Row>   
@@ -75,9 +80,8 @@ function Numbers() {
         MarathiAlpha.map((variant, idx) => (
             <Col md="2" key={idx} className="media-col" >
             <Card className="mb-3 card-style">             
-              <Card.Body style={{padding:'1rem'}}>
-                <Card.Title>{variant.val}</Card.Title>
-                
+              <Card.Body style={{padding:'0.8rem'}}>
+                <Card.Title>{variant.val}</Card.Title>                
               </Card.Body>
             </Card>
             </Col>
@@ -109,7 +113,7 @@ function Numbers() {
         Barakade.map((variant) => (
             <Col md="2" key={variant.id} className="media-col" onClick={() => test(variant.id) } >
             <Card className="mb-3 card-style">             
-              <Card.Body style={{padding:'1rem'}}>
+              <Card.Body style={{padding:'0.8rem'}}>
                 <Card.Title>{variant.val}</Card.Title>
                 
               </Card.Body>

@@ -28,6 +28,7 @@ import Dehradun from './StatesImg/Dehradun.jpg';
 import Lucknow from './StatesImg/Lucknow.jpg';
 import Kolkata from './StatesImg/Kolkata.jpg';
 
+import Speech from "../pages/Speech/Speech";
 import './States.css';
 
 function States() {
@@ -166,13 +167,16 @@ function States() {
      {
         Data.map((variant, idx) => (
         <Col md="4" key={idx} className="media-col text-center"> 
+        
         <Card className="mb-3 card-style">             
             <Card.Body>
+            <Speech text={variant.state}>
             <p className="Title">                   
                {idx+1}. {variant.state}
             </p>
+            </Speech>
             <Image src={variant.photo} alt={variant.val} rounded style={{width:'250px'}} />                     
-                <p className="subTitle">{variant.capital}</p> 
+            <Speech text={variant.capital}><p className="subTitle">{variant.capital}</p></Speech> 
             </Card.Body>
         </Card> 
         </Col>

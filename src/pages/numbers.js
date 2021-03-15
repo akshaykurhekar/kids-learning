@@ -3,6 +3,7 @@ import {Container,Jumbotron,Card,Row,Col,Accordion} from 'react-bootstrap';
 import Navbar from '../component/navbar';
 import Footer from '../component/footer';
 import './about.css';
+import Speech from './Speech/Speech';
 
 function Numbers() {
 
@@ -70,19 +71,20 @@ function Numbers() {
         <br/>        
 <Container>
          
-<Card className="mb-3 card-style">
+<Card className="mb-3">
         <Card.Body>        
     <Row>
     {[...Array(11)].map((x, i) =>
           <Col md="2" key={i} className="media-col" >
           <Card className="mb-3 card-style">
-           
-            <Card.Body style={{padding:'1rem'}}>
-              <Card.Title>{i}</Card.Title>
-              <Card.Text>
-                   {numToWords(i)} 
-              </Card.Text>
-            </Card.Body>
+              <Card.Body style={{padding:'0.5rem'}}>
+              <Speech text={ i }>     
+                <Card.Title>{i}</Card.Title>
+                <Card.Text>
+                    {numToWords(i)} 
+                </Card.Text>
+                </Speech>
+              </Card.Body>
           </Card>
           </Col>
         )}
@@ -101,13 +103,14 @@ function Numbers() {
     {[...Array(20)].map((x, i) =>
           <Col md="2" key={i} className="media-col" >
           <Card className="mb-3 card-style">
-           
-            <Card.Body style={{padding:'1rem'}}>
+          <Speech text={ i+11 }>
+            <Card.Body style={{padding:'0.5rem'}}>
               <Card.Title>{i+11}</Card.Title>
               <Card.Text>
                    {numToWords(i+11)} 
               </Card.Text>
             </Card.Body>
+            </Speech>
           </Card>
           </Col>
         )}
@@ -125,13 +128,14 @@ function Numbers() {
     {[...Array(30)].map((x, i) =>
           <Col md="2" key={i} className="media-col" >
           <Card className="mb-3 card-style">
-           
-            <Card.Body style={{padding:'1rem'}}>
+          <Speech text={ i+31 }>
+            <Card.Body style={{padding:'0.5rem'}}>
               <Card.Title>{i+31}</Card.Title>
               <Card.Text>
                    {numToWords(i+31)} 
               </Card.Text>
             </Card.Body>
+           </Speech> 
           </Card>
           </Col>
         )}
@@ -149,13 +153,14 @@ function Numbers() {
     {[...Array(40)].map((x, i) =>
           <Col md="2" key={i} className="media-col" >
           <Card className="mb-3 card-style">
-           
+          <Speech text={ i+61 }>
             <Card.Body style={{padding:'0.5rem'}}>
               <Card.Title>{i+61}</Card.Title>
               <Card.Text>
                    {numToWords(i+61)} 
               </Card.Text>
             </Card.Body>
+           </Speech>
           </Card>
           </Col>
         )}
