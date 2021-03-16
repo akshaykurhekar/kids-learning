@@ -12,6 +12,8 @@ import linkedin from './SVG/linkedin.svg';
 import mail from './SVG/gmail.svg';
 
 function About() {
+
+    
   return (
     <div >     
         <Navbar/>
@@ -26,11 +28,13 @@ function About() {
     
     <br/><br/>
         
-       <p className="name">Akshay Manohar Kurhekar</p>
-       <h2>Student of Computer Science
-Love to play with javaScript. This is my small contribution to the society for kids Learning,
-Those who want to connect with me, follow my social handles
- </h2>
+       <p className="name" style={{fontWeight: "600"}}>Akshay Manohar Kurhekar</p>
+
+        <h2>I am Student of Computer Science who
+        Loves to play with javaScript. This is my small contribution to the society for kids Learning,
+        Those who want to connect with me, follow my social handles
+        </h2>
+ 
        <div className="text-center p-3">
         <a className="p-2" href="tel:+919552259961"><img src={whatsapp} alt="whatsapp" width="50" /></a>
         <a className="p-2" href="https://www.linkedin.com/in/akshay-kurhekar-64438a168/" rel="noreferrer" target="_blank"><img src={linkedin} alt="linkedin" width="50" /></a>

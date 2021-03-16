@@ -19,7 +19,8 @@
 
   .name{
       color:rgb(2, 14, 24);
-       font-size: medium; 
+       font-size: medium;
+       font-weight: "600"; 
        font-family: 'Comfortaa', cursive;
   }
 

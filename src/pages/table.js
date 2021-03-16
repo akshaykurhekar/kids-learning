@@ -24,7 +24,7 @@ function Tables() {
                     
                      <Card.Body style={{padding:'1.5rem'}}>
                          {[...Array(10)].map((x, j) =>
-                            <Card.Title>{i+1} X {j+1}  = {(i+1)*(j+1)}</Card.Title>     
+                            <Card.Title key={j}>{i+1} X {j+1}  = {(i+1)*(j+1)}</Card.Title>     
                          )}                      
                      </Card.Body>
                    </Card>
@@ -47,7 +47,7 @@ function Tables() {
                     
                      <Card.Body style={{padding:'1.5rem'}}>
                          {[...Array(10)].map((x, j) =>
-                            <Card.Title>{i+5} X {j+1}  = {(i+5)*(j+1)}</Card.Title>     
+                            <Card.Title key={j}>{i+5} X {j+1}  = {(i+5)*(j+1)}</Card.Title>     
                          )}                      
                      </Card.Body>
                    </Card>
@@ -71,7 +71,7 @@ function Tables() {
                     
                      <Card.Body style={{padding:'1.5rem'}}>
                          {[...Array(10)].map((x, j) =>
-                            <Card.Title>{i+11} X {j+1}  = {(i+11)*(j+1)}</Card.Title>     
+                            <Card.Title key={j} >{i+11} X {j+1}  = {(i+11)*(j+1)}</Card.Title>     
                          )}                      
                      </Card.Body>
                    </Card>
@@ -94,7 +94,7 @@ function Tables() {
                     
                      <Card.Body style={{padding:'1.5rem'}}>
                          {[...Array(10)].map((x, j) =>
-                            <Card.Title>{i+21} X {j+1}  = {(i+21)*(j+1)}</Card.Title>     
+                            <Card.Title key={j} >{i+21} X {j+1}  = {(i+21)*(j+1)}</Card.Title>     
                          )}                      
                      </Card.Body>
                    </Card>
