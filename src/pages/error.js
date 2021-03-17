@@ -1,4 +1,4 @@
-import {Container,Jumbotron} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 import Navbar from '../component/navbar';
 import errorSvg from './error404.svg';
  
@@ -11,7 +11,7 @@ function Error() {
           
         <Container>
 
-        <img src={errorSvg} alt="error 404" height="700" />          
+        <img src={errorSvg} alt="error 404" width="100%" height="550px" />          
 
         </Container>
 
