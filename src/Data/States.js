@@ -4,7 +4,7 @@ import Amaravati from './StatesImg/Amaravati.jpg';
 import Itanagar from './StatesImg/Itanagar.jpg';
 import Dispur from './StatesImg/Dispur.jpg';
 import Patna from './StatesImg/Patna.jpg';
-import Rajpur from './StatesImg/Rajpur.jpg';
+import Raipur from './StatesImg/Raipur.jpg';
 import Panaji from './StatesImg/Panaji.jpg';
 import Gandhinagar from './StatesImg/Gandhinagar.jpg';
 import Chandigarh from './StatesImg/Chandigarh.jpg';
@@ -55,9 +55,9 @@ function States() {
         capital:"Patna"
     },
     {
-        photo:Rajpur,
+        photo:Raipur,
         state:"Chhattisgarh",
-        capital:"Rajpur"},
+        capital:"Raipur"},
     {
         photo:Panaji,
         state:"Goa",
