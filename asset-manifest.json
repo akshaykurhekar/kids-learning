@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kids-learning/static/css/main.a619638d.chunk.css",
-    "main.js": "/kids-learning/static/js/main.501c8476.chunk.js",
-    "main.js.map": "/kids-learning/static/js/main.501c8476.chunk.js.map",
+    "main.js": "/kids-learning/static/js/main.0590aed2.chunk.js",
+    "main.js.map": "/kids-learning/static/js/main.0590aed2.chunk.js.map",
     "runtime-main.js": "/kids-learning/static/js/runtime-main.efa09f50.js",
     "runtime-main.js.map": "/kids-learning/static/js/runtime-main.efa09f50.js.map",
     "static/css/2.fb75c436.chunk.css": "/kids-learning/static/css/2.fb75c436.chunk.css",
@@ -61,7 +61,7 @@
     "static/media/Peony.d338462b.jpg": "/kids-learning/static/media/Peony.d338462b.jpg",
     "static/media/Pluto.ac8edcb2.jpg": "/kids-learning/static/media/Pluto.ac8edcb2.jpg",
     "static/media/Poppy.f0a60b48.jpg": "/kids-learning/static/media/Poppy.f0a60b48.jpg",
-    "static/media/Rajpur.5d40f529.jpg": "/kids-learning/static/media/Rajpur.5d40f529.jpg",
+    "static/media/Raipur.5d40f529.jpg": "/kids-learning/static/media/Raipur.5d40f529.jpg",
     "static/media/Ranchi.27d2a3bb.jpg": "/kids-learning/static/media/Ranchi.27d2a3bb.jpg",
     "static/media/Rose.11eb163c.jpg": "/kids-learning/static/media/Rose.11eb163c.jpg",
     "static/media/Saturn.951c5ed2.jpg": "/kids-learning/static/media/Saturn.951c5ed2.jpg",
@@ -93,6 +93,6 @@
     "static/css/2.fb75c436.chunk.css",
     "static/js/2.a21c84a3.chunk.js",
     "static/css/main.a619638d.chunk.css",
-    "static/js/main.501c8476.chunk.js"
+    "static/js/main.0590aed2.chunk.js"
   ]
 }
