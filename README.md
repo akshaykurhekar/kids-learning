@@ -2,7 +2,7 @@
 
 ## E-Learning Platform for kid's
 
- <a href="https://akshaykurhekar.github.io/kids-learning/#/">Check ME</a>
+ # Project Link: <a href="https://akshaykurhekar.github.io/kids-learning/#/">Check ME</a>
 
 ## Fork this repo.
  
@@ -12,6 +12,7 @@
 
     $ npm run
         OR
-    $ yarn start 
+    $ yarn start
+   
 
        
