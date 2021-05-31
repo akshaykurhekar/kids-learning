@@ -10,6 +10,11 @@
      background-color: rgb(255, 255, 255); 
 } */
 
-.dropdown:hover>.dropdown-menu {
+.nav-item{
+    color:rgb(75, 75, 75);
+    font-weight: 400;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.dropdown:hover.dropdown-menu {
     display: block;
   }
