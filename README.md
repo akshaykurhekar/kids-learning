@@ -4,7 +4,7 @@
 
    ## Project Link: <a href="https://akshaykurhekar.github.io/kids-learning/#/">Check ME</a>
 
-## Your contribution can make a valuable changes in this project to make powerful open-source Project
+   ## Your contribution can make a valuable changes in this project to make powerful open-source Project
 
   ### So, do Like and Share the project with more developer.  
 
