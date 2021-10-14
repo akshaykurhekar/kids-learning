@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kids-learning/static/css/main.dac8ea1b.chunk.css",
-    "main.js": "/kids-learning/static/js/main.e611426a.chunk.js",
-    "main.js.map": "/kids-learning/static/js/main.e611426a.chunk.js.map",
+    "main.js": "/kids-learning/static/js/main.7a5db357.chunk.js",
+    "main.js.map": "/kids-learning/static/js/main.7a5db357.chunk.js.map",
     "runtime-main.js": "/kids-learning/static/js/runtime-main.efa09f50.js",
     "runtime-main.js.map": "/kids-learning/static/js/runtime-main.efa09f50.js.map",
     "static/css/2.fb75c436.chunk.css": "/kids-learning/static/css/2.fb75c436.chunk.css",
@@ -93,6 +93,6 @@
     "static/css/2.fb75c436.chunk.css",
     "static/js/2.a21c84a3.chunk.js",
     "static/css/main.dac8ea1b.chunk.css",
-    "static/js/main.e611426a.chunk.js"
+    "static/js/main.7a5db357.chunk.js"
   ]
 }
