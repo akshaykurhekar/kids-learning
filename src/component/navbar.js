@@ -6,7 +6,7 @@ function Navbarkids() {
   return (
     <div className="Navbar">
     <Navbar expand="lg">
-    <Navbar.Brand className="heading" href="/kids-learning/#/">KG E-Book</Navbar.Brand>
+    <Navbar.Brand className="heading" href="/kids-learning/#/">GK e-Book</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto pl-5 ">
