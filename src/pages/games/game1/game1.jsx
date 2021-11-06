@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Timer from "./timer/Timer";
 
 import "./game1.css";
-import { Row, Col,Card,Button } from "react-bootstrap";
+import { Row, Col,Button } from "react-bootstrap";
 //import { Button } from "@material-ui/core";
 
 const Game1 = () => {
@@ -23,6 +23,11 @@ const Game1 = () => {
   const  [nextButtonEnable, setNextButtonEnable] = useState(false);
   const  [ButtonEnable, setButtonEnable] = useState(false);
 
+  const  [totalQuestionCount, setTotalQuestionCount] = useState(0);
+  const  [correctQuestionCount, setCorrectQuestionCount] = useState(0);
+  const  [timeRemain, setTimeRemain] = useState(true);
+
+
     useEffect(()=>{
         createQuestion();
     },[])
@@ -32,7 +37,7 @@ const Game1 = () => {
         let op1= Math.floor(Math.random() * 10+10);
         let op2 = Math.floor(Math.random() * 10+8);
         
-
+        setTotalQuestionCount(totalQuestionCount + 1);
         const d = new Date();
         let seconds = d.getSeconds();
 
@@ -118,6 +123,7 @@ const Game1 = () => {
        
             if(option === 'option1'){
                 if(ans === answer){
+                    setCorrectQuestionCount( correctQuestionCount +1);
                     setVariantOp1('outline-success');
                 }else{
                     setVariantOp1('outline-danger');
@@ -125,6 +131,7 @@ const Game1 = () => {
             }else  if(option === 'option2'){
                 
                     if(ans === answer){
+                        setCorrectQuestionCount( correctQuestionCount +1);
                      setVariantOp2('outline-success');
                     }else{
                         setVariantOp2('outline-danger');
@@ -132,6 +139,7 @@ const Game1 = () => {
             }else  if(option === 'option3'){
                 
                     if(ans === answer){
+                        setCorrectQuestionCount( correctQuestionCount +1);
                     setVariantOp3('outline-success');
                     }else{
                         setVariantOp3('outline-danger');
@@ -139,6 +147,7 @@ const Game1 = () => {
             }else  if(option === 'option4'){
                 
                     if(ans === answer){
+                        setCorrectQuestionCount( correctQuestionCount +1);
                     setVariantOp4('outline-success');
                     }else{
                         setVariantOp4('outline-danger');
@@ -157,11 +166,12 @@ const Game1 = () => {
     
         </Col>
         <Col className="sm-col-4">
-            <Timer/>      
+            <Timer setTimeRemain={setTimeRemain} />      
         </Col>
       </Row>
       <div className="justify-content-md-left p-md-5 p-lg-5 p-sm-2">      
-      <div className="jumbotron">
+      { timeRemain ?
+      (<div className="jumbotron">
         <div className=" mb-2">Q. {question} = _________ </div>
         <Row>
           <Col xs={12} md={6} className="p-2">
@@ -193,7 +203,13 @@ const Game1 = () => {
             </Button>) : null
             }        
         </div> 
-      </div>
+      </div>) : (
+          <div>
+              <h2>Score : { (correctQuestionCount / totalQuestionCount)*100 } {' %'}</h2>
+          </div>
+      )
+      }
+
       </div>
     </div>
   );

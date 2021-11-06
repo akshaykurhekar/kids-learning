@@ -4,7 +4,7 @@ import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
 import "./Timer.css";
 
-const Timer = () =>{
+const Timer = (props) =>{
   
     const history = useHistory();
 
@@ -13,7 +13,8 @@ const Timer = () =>{
         const seconds = remainingTime % 60
         if (remainingTime === 0) {
            // history.push('/game');
-          return <div className="timer">Too late...</div>;
+           props.setTimeRemain(false);
+          return <div className="timer">Time Done</div>;
         }
       
         return (
@@ -31,7 +32,7 @@ const Timer = () =>{
       <div className="timer-wrapper" style={{height:'200px'}}>
         <CountdownCircleTimer
           isPlaying
-          duration={6}
+          duration={20}
           colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
           //onComplete={() => [true, 1000]}
         >
