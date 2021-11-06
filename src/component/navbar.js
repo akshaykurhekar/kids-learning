@@ -15,6 +15,7 @@ function Navbarkids() {
         <Nav.Link href="/kids-learning/#/words" className="nav-item"><img src="https://img.icons8.com/color/26/000000/document--v1.png" alt="words_icon"/> Words </Nav.Link>
         <Nav.Link href="/kids-learning/#/table" className="nav-item"><img src="https://img.icons8.com/color/26/000000/sigma.png" alt="table_icon"/> Table's </Nav.Link>
         <Nav.Link href="/kids-learning/#/about" className="nav-item"><img src="https://img.icons8.com/color/26/000000/about.png" alt="About_icon"/> About Us</Nav.Link>
+        <Nav.Link href="/kids-learning/#/game" className="nav-item"><img src="https://img.icons8.com/color/26/000000/about.png" alt="About_icon"/> Let's Play</Nav.Link>
       </Nav>
       <Form inline>
           <Button href="/kids-learning/#/practice" variant="outline-success"> Practice <img src="https://img.icons8.com/color/26/000000/edit--v1.png" alt="Practice_icon"/></Button>
