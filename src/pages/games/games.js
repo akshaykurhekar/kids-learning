@@ -11,7 +11,7 @@ function Games() {
       <Navbar />
       <Practicals />
       <Row style={{ padding:'20px' }}>
-        <Col className="md-col-6">
+        <Col className="md-col-6 p-4">
           <Card >
             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             <Card.Body>
@@ -24,7 +24,7 @@ function Games() {
             </Card.Body>
           </Card>
         </Col>
-        <Col className="md-col-6">
+        <Col className="md-col-6 p-4">
           <Card >
             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             <Card.Body>
@@ -37,7 +37,7 @@ function Games() {
             </Card.Body>
           </Card>
         </Col>
-        <Col className="md-col-6">
+        <Col className="md-col-6 p-4">
         <Card >
             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             <Card.Body>
@@ -50,7 +50,7 @@ function Games() {
             </Card.Body>
           </Card>
         </Col>
-        <Col className="md-col-6 ">
+        <Col className="md-col-6 p-4">
         <Card >
             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             <Card.Body>

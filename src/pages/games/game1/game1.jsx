@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-
+import { useHistory} from 'react-router-dom';
 import Timer from "./timer/Timer";
 
 import "./game1.css";
-import { Row, Col,Button } from "react-bootstrap";
-//import { Button } from "@material-ui/core";
+import { Row, Col,Button,Card } from "react-bootstrap";
 
 const Game1 = () => {
 
@@ -15,10 +14,10 @@ const Game1 = () => {
   const  [option3,setOption3] = useState();
   const  [option4,setOption4] = useState();
 
-  const  [variantOp1, setVariantOp1] = useState('outline-primary');
-  const  [variantOp2, setVariantOp2] = useState('outline-primary');
-  const  [variantOp3, setVariantOp3] = useState('outline-primary');
-  const  [variantOp4, setVariantOp4] = useState('outline-primary');
+  const  [variantOp1, setVariantOp1] = useState('ans-btn');
+  const  [variantOp2, setVariantOp2] = useState('ans-btn');
+  const  [variantOp3, setVariantOp3] = useState('ans-btn');
+  const  [variantOp4, setVariantOp4] = useState('ans-btn');
     
   const  [nextButtonEnable, setNextButtonEnable] = useState(false);
   const  [ButtonEnable, setButtonEnable] = useState(false);
@@ -26,13 +25,17 @@ const Game1 = () => {
   const  [totalQuestionCount, setTotalQuestionCount] = useState(0);
   const  [correctQuestionCount, setCorrectQuestionCount] = useState(0);
   const  [timeRemain, setTimeRemain] = useState(true);
-
-
+  
     useEffect(()=>{
         createQuestion();
     },[])
 
-   
+    const history = useHistory();
+    
+    const navigateToGames = () =>{
+            history.push('/game');
+    }
+
     const createQuestion = () =>{
         let op1= Math.floor(Math.random() * 10+10);
         let op2 = Math.floor(Math.random() * 10+8);
@@ -48,17 +51,17 @@ const Game1 = () => {
             setAnswer(ans);
             setOption1(ans);        
             setOption2(ans-3);        
-            setOption3(ans + 2);        
-            setOption4(ans+5);
+            setOption3(ans + 20);        
+            setOption4(ans+10);
         }else if( 10 > seconds && seconds < 20){
             let ar = '+';
             setQuestion(op1+' '+ ar +' '+op2);
             const ans = op1+op2;
             setAnswer(ans);
             setOption1(ans);        
-            setOption2(ans+5);        
-            setOption3(ans + 2);        
-            setOption4(ans+7);
+            setOption2(ans+10);        
+            setOption3(ans + 3);        
+            setOption4(ans+20);
         }else if( 21 > seconds && seconds < 30){
             let ar = '-';
             setQuestion(op1+' '+ ar +' '+op2);
@@ -66,7 +69,7 @@ const Game1 = () => {
             setAnswer(ans);
             setOption1(ans+8);        
             setOption2(ans+5);        
-            setOption3(ans + 2);        
+            setOption3(ans + 3);        
             setOption4(ans);
         }else if( 31 > seconds && seconds < 40){
             let ar = '/';
@@ -92,9 +95,9 @@ const Game1 = () => {
             setQuestion(op1+' '+ ar +' '+op2);
             const ans = op1*op2;
             setAnswer(ans);
-            setOption1(ans-4);        
-            setOption2(ans+5);        
-            setOption3(ans + 2);        
+            setOption1(ans-10);        
+            setOption2(ans+20);        
+            setOption3(ans + 10);        
             setOption4(ans);
         }
         else {
@@ -112,10 +115,10 @@ const Game1 = () => {
         setNextButtonEnable(false); 
         setButtonEnable(false);
 
-        setVariantOp1('outline-primary');
-        setVariantOp2('outline-primary');
-        setVariantOp3('outline-primary');
-        setVariantOp4('outline-primary');
+        setVariantOp1('ans-btn');
+        setVariantOp2('ans-btn');
+        setVariantOp3('ans-btn');
+        setVariantOp4('ans-btn');
       
     }
 
@@ -124,33 +127,33 @@ const Game1 = () => {
             if(option === 'option1'){
                 if(ans === answer){
                     setCorrectQuestionCount( correctQuestionCount +1);
-                    setVariantOp1('outline-success');
+                    setVariantOp1('correct-ans-btn');
                 }else{
-                    setVariantOp1('outline-danger');
+                    setVariantOp1('wrong-ans-btn');
                 }
             }else  if(option === 'option2'){
                 
                     if(ans === answer){
                         setCorrectQuestionCount( correctQuestionCount +1);
-                     setVariantOp2('outline-success');
+                     setVariantOp2('correct-ans-btn');
                     }else{
-                        setVariantOp2('outline-danger');
+                        setVariantOp2('wrong-ans-btn');
                     }
             }else  if(option === 'option3'){
                 
                     if(ans === answer){
                         setCorrectQuestionCount( correctQuestionCount +1);
-                    setVariantOp3('outline-success');
+                    setVariantOp3('correct-ans-btn');
                     }else{
-                        setVariantOp3('outline-danger');
+                        setVariantOp3('wrong-ans-btn');
                     }
             }else  if(option === 'option4'){
                 
                     if(ans === answer){
                         setCorrectQuestionCount( correctQuestionCount +1);
-                    setVariantOp4('outline-success');
+                    setVariantOp4('correct-ans-btn');
                     }else{
-                        setVariantOp4('outline-danger');
+                        setVariantOp4('wrong-ans-btn');
                     }
             }
         
@@ -162,38 +165,38 @@ const Game1 = () => {
     <div>
       <Row>
         <Col className="sm-col-4 sm-hide">
-          <h1>Game 1 Lets Start</h1>
+          <h1 className="font-bold pt-4">Logic Game</h1>
     
         </Col>
         <Col className="sm-col-4">
-            <Timer setTimeRemain={setTimeRemain} />      
+            {/* <Timer setTimeRemain={setTimeRemain} />       */}
         </Col>
       </Row>
       <div className="justify-content-md-left p-md-5 p-lg-5 p-sm-2">      
       { timeRemain ?
       (<div className="jumbotron">
-        <div className=" mb-2">Q. {question} = _________ </div>
+        <div className="mb-2" style={{fontWeight:'bold', color:'black'}}>Q. {question} = _________ </div>
         <Row>
           <Col xs={12} md={6} className="p-2">
-          A) <Button disabled={ButtonEnable} variant={variantOp1} onClick={()=>checkAnswer(option1,'option1')}>
+          A) <button disabled={ButtonEnable} className={variantOp1} onClick={()=>checkAnswer(option1,'option1')}>
           {option1}
-          </Button>
-          {/* <Button className=" bg-green"> a) {option1} </Button> */}
+          </button>
+          {/* <button className="bg-green"> a) {option1} </button> */}
           </Col>
           <Col xs={12} md={6} className="p-2 ">
-           B) <Button disabled={ButtonEnable} variant={variantOp2} onClick={()=>checkAnswer(option2,'option2')}>
+           B) <button disabled={ButtonEnable}  className={variantOp2} onClick={()=>checkAnswer(option2,'option2')}>
             {option2}   
-            </Button>
+            </button>
           </Col>
           <Col xs={12} md={6} className="p-2">
-          C) <Button className="bold" disabled={ButtonEnable} variant={variantOp3} onClick={()=>checkAnswer(option3, 'option3')}>
+          C) <button disabled={ButtonEnable} className={variantOp3} onClick={()=>checkAnswer(option3, 'option3')}>
             {option3}   
-            </Button>
+            </button>
           </Col>
           <Col xs={12} md={6} className="p-2 ">
-          D) <Button className="bold" variant={variantOp4} disabled={ButtonEnable} onClick={()=>checkAnswer(option4,'option4')}>
+          D) <button className={variantOp4} disabled={ButtonEnable} onClick={()=>checkAnswer(option4,'option4')}>
             {option4}   
-            </Button>
+            </button>
           </Col>
         </Row>
        <div style={{marginLeft:'40px'}}>
@@ -204,12 +207,17 @@ const Game1 = () => {
             }        
         </div> 
       </div>) : (
-          <div>
-              <h2>Score : { (correctQuestionCount / totalQuestionCount)*100 } {' %'}</h2>
-          </div>
+          <Card>             
+            <Card.Body>
+                <Card.Title>Game Score</Card.Title>
+                <Card.Text>
+                Score : { (correctQuestionCount / totalQuestionCount)*100 } {' %'}
+                </Card.Text>
+                <Button variant="info" onClick={ navigateToGames }>Play More Games</Button>
+            </Card.Body>
+        </Card>
       )
       }
-
       </div>
     </div>
   );

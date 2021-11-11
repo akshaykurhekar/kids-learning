@@ -1,0 +1,29 @@
+.ans-btn{
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 6px 28px 6px 28px;
+    color: rgb(44, 40, 43);
+    font-weight: bold;
+    font-size: larger;
+    border: 1px solid rgb(99, 96, 96);    
+}
+
+.correct-ans-btn{
+    background-color: rgb(92, 212, 138);
+    border-radius: 4px;
+    padding: 6px 28px 6px 28px;
+    color: rgb(247, 243, 246);
+    font-weight: bold;
+    font-size: larger;
+    border: 1px solid rgb(255, 255, 255);    
+}
+
+.wrong-ans-btn{
+    background-color: rgb(255, 72, 72);
+    border-radius: 4px;
+    padding: 6px 28px 6px 28px;
+    color: rgb(247, 243, 246);
+    font-weight: bold;
+    font-size: larger;
+    border: 1px solid rgb(255, 255, 255); 
+}

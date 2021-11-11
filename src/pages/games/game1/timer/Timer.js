@@ -1,12 +1,12 @@
 import React from "react";
-import { useHistory} from 'react-router-dom';
+// import { useHistory} from 'react-router-dom';
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
 import "./Timer.css";
 
 const Timer = (props) =>{
   
-    const history = useHistory();
+    // const history = useHistory();
 
     const renderTime = ({ remainingTime }) => {
         const minutes = Math.floor(remainingTime / 60)
