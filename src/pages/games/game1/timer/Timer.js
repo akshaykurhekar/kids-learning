@@ -32,7 +32,7 @@ const Timer = (props) =>{
       <div className="timer-wrapper" style={{height:'200px'}}>
         <CountdownCircleTimer
           isPlaying
-          duration={20}
+          duration={60}
           colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
           //onComplete={() => [true, 1000]}
         >

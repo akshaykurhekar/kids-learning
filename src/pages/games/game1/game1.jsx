@@ -169,7 +169,7 @@ const Game1 = () => {
     
         </Col>
         <Col className="sm-col-4">
-            {/* <Timer setTimeRemain={setTimeRemain} />       */}
+            <Timer setTimeRemain={setTimeRemain} />      
         </Col>
       </Row>
       <div className="justify-content-md-left p-md-5 p-lg-5 p-sm-2">      
@@ -208,11 +208,15 @@ const Game1 = () => {
         </div> 
       </div>) : (
           <Card>             
-            <Card.Body>
-                <Card.Title>Game Score</Card.Title>
+            <Card.Body className="text-center">
+                <Card.Title style={{fontWeight:700}}>Score Summary</Card.Title>
+                <br/>
                 <Card.Text>
-                Score : { (correctQuestionCount / totalQuestionCount)*100 } {' %'}
+                Total Questions : <span style={{color:'black', fontWeight:800}}>{ totalQuestionCount }</span>   <br/>
+                Correct Questions : <span style={{color:'black', fontWeight:800}}>{ correctQuestionCount } </span><br/>
+                Score : <span style={{color:'black', fontWeight:800}}>{ (correctQuestionCount / totalQuestionCount)*100 } {' %'}</span>
                 </Card.Text>
+                <br/>
                 <Button variant="info" onClick={ navigateToGames }>Play More Games</Button>
             </Card.Body>
         </Card>
