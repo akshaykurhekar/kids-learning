@@ -12,6 +12,8 @@ import { HashRouter as Router,
         Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Games from './pages/games/games';
+import Game1 from './pages/games/game1/game1';
 
 function App() {
   return (
@@ -24,7 +26,9 @@ function App() {
                 <Route path={"/table"} component={Tables} exact />
                 <Route path={"/words"} component={Words} exact />
                 <Route path={"/practice"} component={Practice} exact /> 
-                <Route path={"/About"} component={About} exact />                
+                <Route path={"/About"} component={About} exact />
+                <Route path={"/game"} component={Games} exact />
+                <Route path={"/game1"} component={Game1} exact />                
                 <Route component={Error}  />  
             </Switch>
         </Router>    
