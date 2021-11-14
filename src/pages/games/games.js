@@ -20,7 +20,7 @@ function Games() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <a href="/kids-learning/#/game1" className="btn" >Let's Start Game</a>
+              <a href="/kids-learning/#/game1" className="btn" >Let's Play Logic Game</a>
             </Card.Body>
           </Card>
         </Col>
@@ -33,7 +33,7 @@ function Games() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <button className="btn">Let's Start Game</button>
+              <a href="/kids-learning/#/game2" className="btn" >Let's Play Mind Game</a>
             </Card.Body>
           </Card>
         </Col>
