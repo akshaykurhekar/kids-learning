@@ -3,8 +3,8 @@
     border-radius: 4px;
     padding: 6px 28px 6px 28px;
     color: rgb(44, 40, 43);
-    font-weight: bold;
-    font-size: larger;
+    /* font-weight: bold; */
+    /* font-size: larger; */
     border: 1px solid rgb(99, 96, 96);    
 }
 
@@ -13,8 +13,8 @@
     border-radius: 4px;
     padding: 6px 28px 6px 28px;
     color: rgb(247, 243, 246);
-    font-weight: bold;
-    font-size: larger;
+    /* font-weight: bold;
+    font-size: larger; */
     border: 1px solid rgb(255, 255, 255);    
 }
 
@@ -23,7 +23,7 @@
     border-radius: 4px;
     padding: 6px 28px 6px 28px;
     color: rgb(247, 243, 246);
-    font-weight: bold;
-    font-size: larger;
+    /* font-weight: bold;
+    font-size: larger; */
     border: 1px solid rgb(255, 255, 255); 
 }

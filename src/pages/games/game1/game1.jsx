@@ -174,7 +174,7 @@ const Game1 = () => {
       </Row>
       <div className="justify-content-md-left p-md-5 p-lg-5 p-sm-2">      
       { timeRemain ?
-      (<div className="jumbotron" style={{font: 'small-caps bold 24px/1 sans-serif'}}>
+      (<div className="jumbotron" style={{font: 'small-caps bold 24px/1 sans-serif', color:'rgba(33, 33, 34, 0.856)'}}>
         <div className="mb-2" >{'Q. '}{ question} = _________ </div>
         <Row>
           <Col xs={12} md={6} className="p-2">
