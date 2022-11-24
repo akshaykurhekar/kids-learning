@@ -165,7 +165,7 @@ const Game1 = () => {
     <div>
       <Row>
         <Col className="sm-col-4 sm-hide">
-          <h1 className="font-bold pt-4">Logic Game</h1>
+          <h1 className="pt-4" style={{font: 'small-caps bold 34px/1 sans-serif'}}>Maths Logical TestGame</h1>
     
         </Col>
         <Col className="sm-col-4">
@@ -174,32 +174,32 @@ const Game1 = () => {
       </Row>
       <div className="justify-content-md-left p-md-5 p-lg-5 p-sm-2">      
       { timeRemain ?
-      (<div className="jumbotron">
-        <div className="mb-2" style={{fontWeight:'bold', color:'black'}}>Q. {question} = _________ </div>
+      (<div className="jumbotron" style={{font: 'small-caps bold 24px/1 sans-serif'}}>
+        <div className="mb-2" >{'Q. '}{ question} = _________ </div>
         <Row>
           <Col xs={12} md={6} className="p-2">
-          A) <button disabled={ButtonEnable} className={variantOp1} onClick={()=>checkAnswer(option1,'option1')}>
+          {'A)'} <button disabled={ButtonEnable} className={variantOp1} onClick={()=>checkAnswer(option1,'option1')}>
           {option1}
           </button>
           {/* <button className="bg-green"> a) {option1} </button> */}
           </Col>
           <Col xs={12} md={6} className="p-2 ">
-           B) <button disabled={ButtonEnable}  className={variantOp2} onClick={()=>checkAnswer(option2,'option2')}>
+           {'B)'} <button disabled={ButtonEnable}  className={variantOp2} onClick={()=>checkAnswer(option2,'option2')}>
             {option2}   
             </button>
           </Col>
           <Col xs={12} md={6} className="p-2">
-          C) <button disabled={ButtonEnable} className={variantOp3} onClick={()=>checkAnswer(option3, 'option3')}>
+          {'C)'} <button disabled={ButtonEnable} className={variantOp3} onClick={()=>checkAnswer(option3, 'option3')}>
             {option3}   
             </button>
           </Col>
           <Col xs={12} md={6} className="p-2 ">
-          D) <button className={variantOp4} disabled={ButtonEnable} onClick={()=>checkAnswer(option4,'option4')}>
+          {'D)'} <button className={variantOp4} disabled={ButtonEnable} onClick={()=>checkAnswer(option4,'option4')}>
             {option4}   
             </button>
           </Col>
         </Row>
-       <div style={{marginLeft:'40px'}}>
+       <div style={{marginLeft:'40px', font: 'small-caps bold 24px/1 sans-serif'}}>
        { nextButtonEnable ? (
         <Button variant="warning" onClick={()=>createQuestion()}>
             Next

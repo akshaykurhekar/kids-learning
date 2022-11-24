@@ -1,5 +1,5 @@
 /* eslint-disable no-mixed-operators */
-import {Container,Jumbotron,Card,Row,Col,Accordion} from 'react-bootstrap';
+import {Container,Card,Row,Col,Accordion} from 'react-bootstrap';
 import Navbar from '../component/navbar';
 import Footer from '../component/footer';
 import './about.css';

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Aux from "../../hoc/Auxiliary";
 
-import {Tabs,Tab} from "react-bootstrap";
+import {Tabs} from "react-bootstrap";
 
 function TabsDisplay(props){
 

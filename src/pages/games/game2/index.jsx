@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Puzzle from 'react-image-puzzle';
 import Image from '../../../Data/FlowerImg/Bluebell.jpg'
 
@@ -11,7 +11,7 @@ const [str,setStr] = useState(" ");
            
         for(let i=0;i<5;i++){
             for(let j=0;j<5;j++){
-            const start = '*';
+            // const start = '*';
                 console.log("String" + str);
                 // str = str.concat(" ",start);
                 // console.log(start, str1);

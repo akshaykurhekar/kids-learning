@@ -6,7 +6,7 @@ import Footer from '../component/footer';
 import Number from './SVG/tables.svg';
 import AboutUs from './SVG/aboutUs.svg';
 import svg1 from './SVG/numbers123.svg';
-import abc from './SVG/Abc.svg';
+import abc from './SVG/abc.svg';
 import practice from './SVG/practice.svg';
 import HomeSvg from './SVG/Kids.svg';
 import words from './SVG/words.svg';

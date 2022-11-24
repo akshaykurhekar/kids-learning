@@ -2,31 +2,28 @@ import { Row, Col, Card } from "react-bootstrap";
 
 import Navbar from "../../component/navbar";
 import Footer from "../../component/footer";
-import Practicals from "../../component/tspractical";
+
 import "./games.css";
 
 function Games() {
   return (
     <div>
       <Navbar />
-      <Practicals />
       <Row style={{ padding:'20px' }}>
         <Col className="md-col-6 p-4">
           <Card >
-            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             <Card.Body>
-              <Card.Title>Game 1</Card.Title>
+              <Card.Title>Logical Test</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Maths addition, subtraction, multiplication and division problems test with timer and score.
               </Card.Text>
               <a href="/kids-learning/#/game1" className="btn" >Let's Play Logic Game</a>
             </Card.Body>
           </Card>
         </Col>
         <Col className="md-col-6 p-4">
-          <Card >
-            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+          {/* <Card >
+            <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
               <Card.Title>Game 2</Card.Title>
               <Card.Text>
@@ -35,11 +32,11 @@ function Games() {
               </Card.Text>
               <a href="/kids-learning/#/game2" className="btn" >Let's Play Mind Game</a>
             </Card.Body>
-          </Card>
+          </Card> */}
         </Col>
         <Col className="md-col-6 p-4">
-        <Card >
-            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+        {/* <Card >
+            <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
               <Card.Title>Game 3</Card.Title>
               <Card.Text>
@@ -48,11 +45,11 @@ function Games() {
               </Card.Text>
               <button className="btn">Let's Start Game</button>
             </Card.Body>
-          </Card>
+          </Card> */}
         </Col>
-        <Col className="md-col-6 p-4">
+        {/* <Col className="md-col-6 p-4">
         <Card >
-            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+            <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
               <Card.Title>Game 4</Card.Title>
               <Card.Text>
@@ -62,7 +59,7 @@ function Games() {
               <button className="btn">Let's Start Game</button>
             </Card.Body>
           </Card>
-        </Col>
+        </Col> */}
       </Row>
       <Footer/>
     </div>
