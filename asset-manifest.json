@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/kids-learning/static/css/main.5d278107.chunk.css",
-    "main.js": "/kids-learning/static/js/main.0834bfe6.chunk.js",
-    "main.js.map": "/kids-learning/static/js/main.0834bfe6.chunk.js.map",
-    "runtime-main.js": "/kids-learning/static/js/runtime-main.c51f96b1.js",
-    "runtime-main.js.map": "/kids-learning/static/js/runtime-main.c51f96b1.js.map",
+    "main.css": "/kids-learning/static/css/main.e1860fa4.chunk.css",
+    "main.js": "/kids-learning/static/js/main.14b758ad.chunk.js",
+    "main.js.map": "/kids-learning/static/js/main.14b758ad.chunk.js.map",
+    "runtime-main.js": "/kids-learning/static/js/runtime-main.ba5c6380.js",
+    "runtime-main.js.map": "/kids-learning/static/js/runtime-main.ba5c6380.js.map",
     "static/css/2.e47ab57f.chunk.css": "/kids-learning/static/css/2.e47ab57f.chunk.css",
-    "static/js/2.f7f1bb06.chunk.js": "/kids-learning/static/js/2.f7f1bb06.chunk.js",
-    "static/js/2.f7f1bb06.chunk.js.map": "/kids-learning/static/js/2.f7f1bb06.chunk.js.map",
-    "static/js/3.62ff8e4b.chunk.js": "/kids-learning/static/js/3.62ff8e4b.chunk.js",
-    "static/js/3.62ff8e4b.chunk.js.map": "/kids-learning/static/js/3.62ff8e4b.chunk.js.map",
-    "static/js/4.6b01a761.chunk.js": "/kids-learning/static/js/4.6b01a761.chunk.js",
-    "static/js/4.6b01a761.chunk.js.map": "/kids-learning/static/js/4.6b01a761.chunk.js.map",
+    "static/js/2.9258bc65.chunk.js": "/kids-learning/static/js/2.9258bc65.chunk.js",
+    "static/js/2.9258bc65.chunk.js.map": "/kids-learning/static/js/2.9258bc65.chunk.js.map",
+    "static/js/3.918dd3c9.chunk.js": "/kids-learning/static/js/3.918dd3c9.chunk.js",
+    "static/js/3.918dd3c9.chunk.js.map": "/kids-learning/static/js/3.918dd3c9.chunk.js.map",
+    "static/js/4.8c541782.chunk.js": "/kids-learning/static/js/4.8c541782.chunk.js",
+    "static/js/4.8c541782.chunk.js.map": "/kids-learning/static/js/4.8c541782.chunk.js.map",
     "index.html": "/kids-learning/index.html",
     "static/css/2.e47ab57f.chunk.css.map": "/kids-learning/static/css/2.e47ab57f.chunk.css.map",
-    "static/css/main.5d278107.chunk.css.map": "/kids-learning/static/css/main.5d278107.chunk.css.map",
-    "static/js/2.f7f1bb06.chunk.js.LICENSE.txt": "/kids-learning/static/js/2.f7f1bb06.chunk.js.LICENSE.txt",
+    "static/css/main.e1860fa4.chunk.css.map": "/kids-learning/static/css/main.e1860fa4.chunk.css.map",
+    "static/js/2.9258bc65.chunk.js.LICENSE.txt": "/kids-learning/static/js/2.9258bc65.chunk.js.LICENSE.txt",
     "static/media/Agartala.5591de72.jpg": "/kids-learning/static/media/Agartala.5591de72.jpg",
     "static/media/Aizawl.7973c569.jpg": "/kids-learning/static/media/Aizawl.7973c569.jpg",
     "static/media/AkshayMK1.341669b7.jpg": "/kids-learning/static/media/AkshayMK1.341669b7.jpg",
@@ -91,10 +91,10 @@
     "static/media/words.825cc147.svg": "/kids-learning/static/media/words.825cc147.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c51f96b1.js",
+    "static/js/runtime-main.ba5c6380.js",
     "static/css/2.e47ab57f.chunk.css",
-    "static/js/2.f7f1bb06.chunk.js",
-    "static/css/main.5d278107.chunk.css",
-    "static/js/main.0834bfe6.chunk.js"
+    "static/js/2.9258bc65.chunk.js",
+    "static/css/main.e1860fa4.chunk.css",
+    "static/js/main.14b758ad.chunk.js"
   ]
 }
